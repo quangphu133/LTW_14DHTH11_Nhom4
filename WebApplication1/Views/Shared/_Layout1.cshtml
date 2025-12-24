@@ -1,0 +1,376 @@
+﻿<!doctype html>
+<html class="no-js" lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title - Nhà sách nhóm 5</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="/layout_nhasach_thamkhao/apple-touch-icon.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/icomoon.css">
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/transitions.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/color.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        .tg-userlogin .dropdown-menu {
+            right: 0;
+            left: auto;
+            min-width: 180px;
+        }
+
+            .tg-userlogin .dropdown-menu li a {
+                padding: 10px 15px;
+                display: block;
+                color: #333;
+            }
+
+                .tg-userlogin .dropdown-menu li a:hover {
+                    background-color: #77b748; /* Màu xanh của theme */
+                    color: #fff;
+                }
+
+        .login-links a {
+            color: #333;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+            .login-links a:hover {
+                color: #77b748;
+            }
+    </style>
+</head>
+<body class="tg-home tg-homeone">
+    <div id="tg-wrapper" class="tg-wrapper tg-haslayout">
+        <header id="tg-header" class="tg-header tg-haslayout">
+            <div class="tg-topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="tg-userlogin">
+                                @if (Session["UserID"] != null)
+                                {
+                                    <figure>
+                                        <a href="javascript:void(0);">
+                                            <img src="/images/users/img-01.jpg" alt="Avatar">
+                                        </a>
+                                    </figure>
+
+                                    <div class="dropdown" style="display:inline-block;">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 10px 0; text-decoration: none; color: #333; display: flex; align-items: center;">
+                                            <span>Chào, <strong>@Session["FullName"]</strong></span>
+                                            <i class="fa fa-angle-down" style="margin-left: 5px;"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu" style="right: 0; left: auto;">
+                                            @if (Session["Role"] != null && Session["Role"].ToString() == "NhanVien")
+                                            {
+                                                <li><a href="@Url.Action("Index", "Dashboard", new { area = "Admin" })"><i class="fa fa-cogs">Trang Quản Trị</i> </a></li>
+                                                <li role="separator" class="divider"></li>
+                                            }
+
+                                            <li><a href="@Url.Action("LichSuDonHang", "Home")"><i class="fa fa-list-alt">Lịch sử đơn hàng</i></a></li>
+                                            <li><a href="@Url.Action("Logout", "Users")" class="text-danger"><i class="fa fa-sign-out">Đăng xuất</i></a></li>
+                                        </ul>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div style="padding-top: 13px; display: flex; align-items: center;">
+                                        <a href="@Url.Action("Login", "Users")" style="color: #333; font-weight: 600;">
+                                            <i class="fa fa-user" style="margin-right:5px;">Đăng nhập</i>
+                                        </a>
+
+                                        <span style="margin: 0 10px; color: #ccc;">|</span>
+
+                                        <a href="@Url.Action("Register", "Users")" style="color: #333; font-weight: 600;">
+                                            Đăng ký
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tg-middlecontainer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <strong class="tg-logo"><a href="/"><img src="/images/logo.png" alt="HUIT BookStore"></a></strong>
+                            <div class="tg-wishlistandcart">
+                                <div class="dropdown tg-themedropdown tg-wishlistdropdown">
+                                    <div class="dropdown-menu tg-themedropdownmenu" aria-labelledby="tg-wishlisst">
+                                        <div class="tg-description"><p>Chưa có sản phẩm nào trong Wishlist!</p></div>
+                                    </div>
+                                </div>
+
+                                @* --- Gọi Partial View Giỏ Hàng --- *@
+                                @Html.Action("GioHangPartial", "GioHang")
+
+                            </div>
+                            <div class="tg-searchbox">
+                                @using (Html.BeginForm("TimKiem", "Home", FormMethod.Get, new { @class = "tg-formtheme tg-formsearch" }))
+                                {
+                                    <fieldset>
+                                        <input type="text" name="search" class="typeahead form-control" placeholder="Tìm sách, tác giả...">
+                                        <button type="submit"><i class="icon-magnifier"></i></button>
+                                    </fieldset>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tg-navigationarea">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <nav id="tg-nav" class="tg-nav">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#tg-navigation" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
+                                    <ul>
+                                        @Html.Action("_MenuPartial", "Home")
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            @RenderBody()
+        </main>
+        <footer id="tg-footer" class="tg-footer tg-haslayout">
+            <div class="tg-footerarea">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <ul class="tg-clientservices">
+                                <li class="tg-devlivery">
+                                    <span class="tg-clientserviceicon"><i class="icon-rocket"></i></span>
+                                    <div class="tg-titlesubtitle">
+                                        <h3>Giao hàng nhanh</h3>
+                                        <p>Vận chuyển toàn quốc</p>
+                                    </div>
+                                </li>
+                                <li class="tg-discount">
+                                    <span class="tg-clientserviceicon"><i class="icon-tag"></i></span>
+                                    <div class="tg-titlesubtitle">
+                                        <h3>Nhiều ưu đãi</h3>
+                                        <p>Giảm giá hấp dẫn</p>
+                                    </div>
+                                </li>
+                                <li class="tg-quality">
+                                    <span class="tg-clientserviceicon"><i class="icon-leaf"></i></span>
+                                    <div class="tg-titlesubtitle">
+                                        <h3>Chất lượng cao</h3>
+                                        <p>Sách chính hãng 100%</p>
+                                    </div>
+                                </li>
+                                <li class="tg-support">
+                                    <span class="tg-clientserviceicon"><i class="icon-heart"></i></span>
+                                    <div class="tg-titlesubtitle">
+                                        <h3>Hỗ trợ 24/7</h3>
+                                        <p>Luôn sẵn sàng phục vụ</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tg-threecolumns">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="tg-footercol">
+                                    <strong class="tg-logo"><a href="javascript:void(0);"><img src="/images/flogo.png" alt="image description"></a></strong>
+                                    <ul class="tg-contactinfo">
+                                        <li>
+                                            <i class="icon-apartment"></i>
+                                            <address>140 Lê Trọng Tấn, P. Tây Thạnh, Q. Tân Phú, TP.HCM</address>
+                                        </li>
+                                        <li>
+                                            <i class="icon-phone-handset"></i>
+                                            <span>
+                                                <em>0900 123 456</em>
+                                                <em>+84 123 456 789</em>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-clock"></i>
+                                            <span>Mở cửa 7 ngày trong tuần từ 8:00 - 21:00</span>
+                                        </li>
+                                        <li>
+                                            <i class="icon-envelope"></i>
+                                            <span>
+                                                <em><a href="mailto:support@bookstore.vn">support@bookstore.vn</a></em>
+                                                <em><a href="mailto:info@bookstore.vn">info@bookstore.vn</a></em>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <ul class="tg-socialicons">
+                                        <li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                        <li class="tg-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                                        <li class="tg-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="tg-footercol tg-widget tg-widgetnavigation">
+                                    <div class="tg-widgettitle">
+                                        <h3>Thông tin & Trợ giúp</h3>
+                                    </div>
+                                    <div class="tg-widgetcontent">
+                                        <ul>
+                                            <li><a href="javascript:void(0);">Điều khoản sử dụng</a></li>
+                                            <li><a href="javascript:void(0);">Chính sách bán hàng</a></li>
+                                            <li><a href="javascript:void(0);">Đổi trả hàng</a></li>
+                                            <li><a href="javascript:void(0);">Bảo mật</a></li>
+                                            <li><a href="javascript:void(0);">Cookies</a></li>
+                                            <li><a href="javascript:void(0);">Liên hệ</a></li>
+                                            <li><a href="javascript:void(0);">Đối tác liên kết</a></li>
+                                            <li><a href="javascript:void(0);">Tầm nhìn & Sứ mệnh</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="javascript:void(0);">Câu chuyện của chúng tôi</a></li>
+                                            <li><a href="javascript:void(0);">Đội ngũ</a></li>
+                                            <li><a href="javascript:void(0);">Câu hỏi thường gặp (FAQ)</a></li>
+                                            <li><a href="javascript:void(0);">Đánh giá khách hàng</a></li>
+                                            <li><a href="javascript:void(0);">Tuyển dụng</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="tg-footercol tg-widget tg-widgettopsellingauthors">
+                                    <div class="tg-widgettitle">
+                                        <h3>Khách hàng</h3>
+                                    </div>
+                                    <div class="tg-widgetcontent">
+                                        <ul>
+                                            <li>
+                                                <figure>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="/images/author/imag-09.jpg" alt="khach hang 1">
+                                                    </a>
+                                                </figure>
+                                                <div class="tg-authornamebooks">
+                                                    <h4><a href="javascript:void(0);">Trần Minh Tuấn</a></h4>
+                                                    <div style="margin-top: 5px; color: #ffcc00;">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="/images/author/imag-10.jpg" alt="khach hang 2">
+                                                    </a>
+                                                </figure>
+                                                <div class="tg-authornamebooks">
+                                                    <h4><a href="javascript:void(0);">Phạm Hoàng Nam</a></h4>
+                                                    <div style="margin-top: 5px; color: #ffcc00;">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <a href="javascript:void(0);">
+                                                        <img src="/images/author/imag-11.jpg" alt="khach hang 3">
+                                                    </a>
+                                                </figure>
+                                                <div class="tg-authornamebooks">
+                                                    <h4><a href="javascript:void(0);">Lê Thị Thảo</a></h4>
+                                                    <div style="margin-top: 5px; color: #ffcc00;">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tg-newsletter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <h4>Đăng ký nhận bản tin!</h4>
+                            <h5>Đăng ký ngay để nhận thông tin về sách mới và ưu đãi sớm nhất.</h5>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <form class="tg-formtheme tg-formnewsletter">
+                                <fieldset>
+                                    <input type="email" name="email" class="form-control" placeholder="Nhập Email của bạn">
+                                    <button type="button"><i class="icon-envelope"></i></button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tg-footerbar">
+                <a id="tg-btnbacktotop" class="tg-btnbacktotop" href="javascript:void(0);"><i class="icon-chevron-up"></i></a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <span class="tg-paymenttype"><img src="/images/paymenticon.png" alt="image description"></span>
+                            <span class="tg-copyright">2025 Bản quyền thuộc về © Nhà sách nhóm 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/vendor/jquery-library.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=en"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.vide.min.js"></script>
+    <script src="/js/countdown.js"></script>
+    <script src="/js/jquery-ui.js"></script>
+    <script src="/js/parallax.js"></script>
+    <script src="/js/countTo.js"></script>
+    <script src="/js/appear.js"></script>
+    <script src="/js/gmap3.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+</html>

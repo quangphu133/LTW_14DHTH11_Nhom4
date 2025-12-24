@@ -1,0 +1,45 @@
+﻿@model WebApplication1.Models.THELOAI
+
+@{
+    ViewBag.Title = "Chuyển đổi và Xóa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" style="max-width: 700px;">
+    <div class="card border-danger shadow-lg">
+        <div class="card-header bg-danger text-white text-center py-3">
+            <h3 class="mb-0"><i class="fas fa-exclamation-triangle"></i> CẢNH BÁO XÓA DỮ LIỆU</h3>
+        </div>
+        <div class="card-body p-4">
+            <p class="lead text-center">
+                Bạn đang thực hiện xóa thể loại: <br />
+                <span class="fw-bold text-danger fs-3">"@Model.TenTL"</span>
+            </p>
+
+            <div class="alert alert-warning border-warning">
+                <strong>Vấn đề:</strong> Thể loại này đang chứa <strong>@ViewBag.SoLuongSach</strong> cuốn sách.
+                <br />
+                Hệ thống yêu cầu bạn phải <strong>chuyển toàn bộ sách</strong> sang một thể loại khác trước khi xóa để tránh mất dữ liệu.
+            </div>
+
+            @using (Html.BeginForm("TransferAndDeleteConfirm", "THELOAIs", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="MaTheLoaiCu" value="@Model.MaTL" />
+
+                <div class="mb-4 mt-4">
+                    <label class="form-label fw-bold">Chọn Thể loại mới (để chuyển sách sang):</label>
+                    @Html.DropDownList("MaTheLoaiMoi", null, htmlAttributes: new { @class = "form-select form-select-lg border-primary" })
+                    <div class="form-text">Tất cả @ViewBag.SoLuongSach cuốn sách sẽ được cập nhật sang thể loại này.</div>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-danger btn-lg" onclick="return confirm('Hành động này không thể hoàn tác. Bạn chắc chắn muốn chuyển sách và xóa thể loại cũ?');">
+                        <i class="fas fa-exchange-alt"></i> Chuyển Sách & Xóa "@Model.TenTL"
+                    </button>
+                    @Html.ActionLink("Hủy bỏ, quay lại danh sách", "Index", null, new { @class = "btn btn-outline-secondary" })
+                </div>
+            }
+        </div>
+    </div>
+</div>

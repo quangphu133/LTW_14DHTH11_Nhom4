@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8afe2e940bce4e0aadf60993c415bb94" Name="Diagram1">
+        <EntityTypeShape EntityType="QLNHASACHModel.CHITIETHOADON" Width="1.5" PointX="11.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHASACHModel.CHITIETPHIEUNHAP" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHASACHModel.HOADON" Width="1.5" PointX="9" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHASACHModel.KHACHHANG" Width="1.5" PointX="6.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHASACHModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHASACHModel.NXB" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHASACHModel.PHIEUNHAP" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHASACHModel.SACH" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHASACHModel.TACGIA" Width="1.5" PointX="3.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLNHASACHModel.THELOAI" Width="1.5" PointX="3.75" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="QLNHASACHModel.FK_CTHD_HD" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_CTHD_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_CTPN_PN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_CTPN_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_HD_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_HD_NV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_PN_NV" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_PN_NXB" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_SACH_NXB" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_SACH_TG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLNHASACHModel.FK_SACH_TL" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="QLNHASACHModel.LOG_HOADON" Width="1.5" PointX="6.375" PointY="0.75" />
+        <EntityTypeShape EntityType="QLNHASACHModel.LOG_NHANVIEN" Width="1.5" PointX="8.375" PointY="0.75" />
+        <EntityTypeShape EntityType="QLNHASACHModel.User" Width="1.5" PointX="12" PointY="8.875" />
+        <AssociationConnector Association="QLNHASACHModel.FK_Users_KH" />
+        <AssociationConnector Association="QLNHASACHModel.FK_Users_NV" />
+        <EntityTypeShape EntityType="QLNHASACHModel.CHITIETDONHANG" Width="1.5" PointX="11.25" PointY="12.75" />
+        <EntityTypeShape EntityType="QLNHASACHModel.DONDATHANG" Width="1.5" PointX="9" PointY="15" />
+        <AssociationConnector Association="QLNHASACHModel.FK__CHITIETDO__MaDon__2BFE89A6" />
+        <AssociationConnector Association="QLNHASACHModel.FK__CHITIETDO__MaSac__2CF2ADDF" />
+        <AssociationConnector Association="QLNHASACHModel.FK__DONDATHANG__MaKH__29221CFB" />
+        <EntityTypeShape EntityType="QLNHASACHModel.v_DanhSachSachFull" Width="1.5" PointX="0.75" PointY="8.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

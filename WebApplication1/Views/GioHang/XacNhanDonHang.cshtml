@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Đặt hàng thành công";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<div class="container text-center" style="margin-top: 50px; margin-bottom: 100px;">
+    <i class="fa fa-check-circle" style="font-size: 80px; color: #77b748; margin-bottom: 20px;"></i>
+    <h2 style="font-weight: bold; color: #333;">ĐẶT HÀNG THÀNH CÔNG!</h2>
+    <p style="font-size: 16px; color: #666; max-width: 600px; margin: 0 auto 30px;">
+        Cảm ơn bạn đã mua hàng tại Nhà sách. Đơn hàng của bạn đang được xử lý và sẽ sớm được giao đến địa chỉ của bạn.
+    </p>
+
+    <a href="@Url.Action("Index", "Home")" class="btn btn-success btn-lg" style="background: #77b748;">
+        <i class="fa fa-arrow-left"></i> Tiếp tục mua sắm
+    </a>
+</div>

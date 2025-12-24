@@ -1,0 +1,100 @@
+﻿@model IEnumerable<WebApplication1.Models.sp_ThongKe_SoLuongHoaDon_Result>
+
+@{
+    ViewBag.Title = "Thống Kê Số Lượng Hóa Đơn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model != null && Model.Any())
+{
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">Biểu đồ so sánh năng suất</div>
+                <div class="panel-body">
+                    <canvas id="chartHoaDon"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">Chi tiết số liệu</div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr class="info">
+                                <th>Họ Tên</th>
+                                <th class="text-center">Số đơn</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.HoTen</td>
+                                    <td class="text-center font-weight-bold">
+                                        @item.SoHoaDon.GetValueOrDefault(0)
+                                    </td>
+                                </tr>
+                            }
+                            <tr style="font-weight:bold; background-color:#f9f9f9;">
+                                <td>TỔNG CỘNG</td>
+                                <td class="text-center text-primary">
+                                    @Model.Sum(x => x.SoHoaDon.GetValueOrDefault(0))
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts{
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            // 1. Chuẩn bị dữ liệu an toàn
+            var labels = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.HoTen)));
+            var dataValues = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.SoHoaDon.GetValueOrDefault(0))));
+
+            // 2. Vẽ biểu đồ
+            var ctx = document.getElementById('chartHoaDon').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'bar', // Dùng biểu đồ cột
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Số lượng hóa đơn đã lập',
+                        data: dataValues,
+                        backgroundColor: 'rgba(153, 102, 255, 0.6)', // Màu tím
+                        borderColor: 'rgba(153, 102, 255, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: { display: true, text: 'Năng suất nhân viên' }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1, // Vì số hóa đơn là số nguyên nên bước nhảy là 1
+                                precision: 0
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+    }
+}
+else
+{
+    <div class="alert alert-warning text-center">
+        <h4>Chưa có dữ liệu hóa đơn nào.</h4>
+    </div>
+}

@@ -1,0 +1,67 @@
+﻿@model WebApplication1.Models.TACGIA
+
+@{
+    ViewBag.Title = "Xóa Tác giả";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid pt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow mb-4 border-danger">
+                <div class="card-header py-3 bg-danger text-white">
+                    <h5 class="m-0 font-weight-bold">
+                        <i class="fas fa-trash-alt me-2"></i>Xác Nhận Xóa Tác Giả
+                    </h5>
+                </div>
+
+                <div class="card-body">
+                    <div class="alert alert-warning text-center" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2 text-danger"></i>
+                        <strong>Cảnh báo:</strong> Bạn có chắc chắn muốn xóa tác giả này không?
+                        <br />
+                        <small>Hành động này không thể hoàn tác nếu dữ liệu đã bị xóa.</small>
+                    </div>
+
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th class="bg-light" style="width: 35%;">
+                                    @Html.DisplayNameFor(model => model.TenTG)
+                                </th>
+                                <td class="fw-bold text-danger">
+                                    @Html.DisplayFor(model => model.TenTG)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="bg-light">
+                                    @Html.DisplayNameFor(model => model.QueQuan)
+                                </th>
+                                <td>
+                                    @Html.DisplayFor(model => model.QueQuan)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr class="my-4" />
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="@Url.Action("Index")" class="btn btn-secondary px-4">
+                                <i class="fas fa-times me-1"></i> Hủy bỏ
+                            </a>
+
+                            <button type="submit" class="btn btn-danger px-4">
+                                <i class="fas fa-check me-1"></i> Xác nhận Xóa
+                            </button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

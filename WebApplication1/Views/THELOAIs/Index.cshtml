@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WebApplication1.Models.THELOAI>
+
+@{
+    ViewBag.Title = "Quản lý Thể loại";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Lỗi:</strong> @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <form action="@Url.Action("Index")" method="get" class="d-flex">
+        <input type="text" name="searchString" value="@Request.QueryString["searchString"]" class="form-control me-2" placeholder="Nhập tên thể loại..." />
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-search"></i> Tìm kiếm
+        </button>
+    </form>
+
+    <div>
+        @Html.ActionLink("Thêm mới Thể loại", "Create", null, new { @class = "btn btn-success" })
+    </div>
+</div>
+
+<table class="table table-bordered table-hover table-striped">
+    <thead class="table-info">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.TenTL)</th>
+            <th style="width: 300px; text-align: center;">Chức năng</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (!Model.Any())
+        {
+            <tr>
+                <td colspan="2" class="text-center">Không tìm thấy dữ liệu phù hợp.</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td class="align-middle">@Html.DisplayFor(modelItem => item.TenTL)</td>
+                    <td class="text-center">
+                        @Html.ActionLink(" Sửa", "Edit", new { id = item.MaTL }, new { @class = "btn btn-sm btn-warning fas fa-edit me-1" })
+                        @Html.ActionLink(" Chi tiết", "Details", new { id = item.MaTL }, new { @class = "btn btn-sm btn-info fas fa-info-circle me-1" })
+
+                        <a href="@Url.Action("TransferAndDelete", new { id = item.MaTL })" class="btn btn-sm btn-danger">
+                            <i class="fas fa-trash-alt"></i> Xóa
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

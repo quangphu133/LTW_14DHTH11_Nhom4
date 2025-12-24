@@ -1,0 +1,102 @@
+﻿@model IEnumerable<WebApplication1.Models.sp_ThongKeSoSachNhap_Result>
+
+@{
+    ViewBag.Title = "Thống Kê Số Sách Nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model != null && Model.Any())
+{
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">Biểu đồ nhập kho</div>
+                <div class="panel-body">
+                    <canvas id="chartSachNhap"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">Chi tiết số liệu</div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr class="info">
+                                <th>Họ Tên</th>
+                                <th class="text-center">Số sách nhập</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.HoTen</td>
+                                    <td class="text-center font-weight-bold">
+                                        @item.TongNhap.GetValueOrDefault(0)
+                                    </td>
+                                </tr>
+                            }
+                            <tr style="font-weight:bold; background-color:#f9f9f9;">
+                                <td>TỔNG CỘNG</td>
+                                <td class="text-center text-warning" style="font-size:16px;">
+                                    @Model.Sum(x => x.TongNhap.GetValueOrDefault(0))
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts{
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            // Chuẩn bị dữ liệu an toàn
+            var labels = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.HoTen)));
+            // Xử lý null thành 0
+            var dataValues = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.TongNhap.GetValueOrDefault(0))));
+
+            // Vẽ biểu đồ
+            var ctx = document.getElementById('chartSachNhap').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'bar', // Biểu đồ cột
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Số lượng sách nhập',
+                        data: dataValues,
+                        // Giữ màu cam như ý bạn (Orange)
+                        backgroundColor: 'rgba(255, 159, 64, 0.6)',
+                        borderColor: 'rgba(255, 159, 64, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: { display: true, text: 'Hiệu suất nhập kho' }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1, // Số nguyên (không có 1.5 quyển sách)
+                                precision: 0
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+    }
+}
+else
+{
+    <div class="alert alert-warning text-center">
+        <h4>Chưa có dữ liệu nhập sách nào.</h4>
+    </div>
+}

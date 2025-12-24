@@ -1,0 +1,60 @@
+﻿@using WebApplication1.Models
+@model List<Giohang>
+
+<div class="tg-wishlistandcart" style="display: flex; align-items: center; gap: 25px;">
+    <div class="dropdown tg-themedropdown tg-minicartdropdown header-cart-box" style="position: relative; display: inline-block; padding-bottom: 10px;">
+        
+        <a href="@Url.Action("GioHang", "GioHang")" id="tg-minicart" class="tg-btnthemedropdown" style="display: flex; align-items: center; text-decoration: none; color: #333; position: relative;">
+            <span class="tg-themebadge" style="position: absolute; top: -8px; left: 10px; background-color: #d9534f; color: white; border-radius: 50%; padding: 2px 5px; font-size: 10px;">@ViewBag.TongSoLuong</span>
+            <i class="icon-cart" style="font-size: 20px; margin-right: 5px;"></i> <span>@String.Format("{0:0,0}", ViewBag.TongTien) đ</span>
+        </a>
+
+        <div class="cart-dropdown" style="display: none; position: absolute; top: 100%; right: 0; width: 300px; background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.15); z-index: 9999; padding: 20px; border-top: 3px solid #77b748; border-radius: 0 0 4px 4px;">
+            @if (Model != null && Model.Count > 0)
+            {
+                <div class="tg-minicartbody" style="max-height: 250px; overflow-y: auto; margin-bottom: 15px;">
+                    @foreach (var item in Model)
+                    {
+                        <div class="tg-minicarproduct" style="display: flex; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                            <figure style="margin: 0 15px 0 0;">
+                                <a href="@Url.Action("Details", "Home", new { id = item.iMaSach })">
+                                    <img src="~/Images/books/@item.sAnhBia" alt="@item.sTenSach" style="width: 50px; height: auto; border: 1px solid #ddd;">
+                                </a>
+                            </figure>
+                            <div class="tg-minicarproductdata">
+                                <h5 style="margin: 0; font-size: 14px;">
+                                    <a href="@Url.Action("Details", "Home", new { id = item.iMaSach })" style="color: #333; font-weight: bold; text-decoration: none;">@item.sTenSach</a>
+                                </h5>
+                                <h6 style="margin: 5px 0 0 0; font-size: 13px; color: #d9534f;">
+                                    @String.Format("{0:0,0}", item.dDonGia) đ x @item.iSoLuong
+                                </h6>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="tg-minicartfoot">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <a class="tg-btnemptycart" href="@Url.Action("XoaGioHang", "GioHang", new { iMaSP = 0 })" onclick="return confirm('Xóa toàn bộ giỏ hàng?')" style="color: #999; font-size: 12px; text-decoration: none;">
+                            <i class="fa fa-trash-o"></i> Xóa hết
+                        </a>
+                        <span class="tg-subtotal" style="font-weight: bold; color: #333;">
+                            Tạm tính: <strong style="color: #d9534f;">@String.Format("{0:0,0}", ViewBag.TongTien) đ</strong>
+                        </span>
+                    </div>
+
+                    <div class="tg-btns" style="display: flex; gap: 10px;">
+                        <a class="btn btn-success btn-sm" href="@Url.Action("GioHang", "GioHang")" style="flex: 1; background: #77b748; border: none; color: white;">Xem Giỏ Hàng</a>
+                        <a class="btn btn-primary btn-sm" href="@Url.Action("DatHang", "GioHang")" style="flex: 1; background: #333; border: none; color: white;">Thanh Toán</a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="empty-cart-msg" style="padding: 20px; text-align: center; color: #999;">
+                    <p>Giỏ hàng trống</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>

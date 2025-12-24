@@ -1,0 +1,111 @@
+﻿@model IEnumerable<WebApplication1.Models.THELOAI>
+@using WebApplication1.Models
+@{
+    var listTacGia = ViewBag.DsTacGia as IEnumerable<TACGIA>;
+}
+
+<style>
+    /* CSS Menu */
+    .tg-navigation > ul > li {
+        position: relative;
+    }
+
+        .tg-navigation > ul > li > .tg-dropdownmenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 250px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            z-index: 999;
+            border-top: 2px solid #77b748;
+        }
+
+        .tg-navigation > ul > li:hover > .tg-dropdownmenu {
+            display: block;
+        }
+
+    .tg-dropdownmenu li {
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+        .tg-dropdownmenu li a {
+            display: block;
+            padding: 10px 15px;
+            color: #333 !important;
+            text-decoration: none;
+            font-weight: normal;
+            text-transform: none;
+            text-align: left;
+        }
+
+            .tg-dropdownmenu li a:hover {
+                background-color: #f9f9f9;
+                color: #77b748 !important;
+                padding-left: 20px;
+                transition: all 0.3s;
+            }
+
+    .menu-category-btn {
+        background: rgba(0,0,0,0.1);
+    }
+</style>
+
+<li class="tg-hasdropdown menu-category-btn">
+    <a href="javascript:void(0);">
+        <i class="fa fa-bars" style="margin-right: 5px;">TẤT CẢ DANH MỤC</i>
+    </a>
+    <ul class="tg-dropdownmenu">
+        @if (Model != null && Model.Count() > 0)
+        {
+            foreach (var item in Model)
+            {
+                <li>
+                    <a href="@Url.Action("SachTheoTheLoai", "Home", new { id = item.MaTL })">
+                        @item.TenTL
+                    </a>
+                </li>
+            }
+        }
+        else
+        {
+            <li><a href="#">Đang cập nhật...</a></li>
+        }
+    </ul>
+</li>
+
+<li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "current-menu-item" : "")">
+    <a href="@Url.Action("Index", "Home")">Trang chủ</a>
+</li>
+
+
+<li class="tg-hasdropdown">
+    <a href="javascript:void(0);">
+        <i class="fa fa-angle-down" style="margin-left: 5px; font-weight: bold;">Tác giả</i>
+    </a>
+
+    <ul class="tg-dropdownmenu">
+        @if (listTacGia != null && listTacGia.Count() > 0)
+        {
+            foreach (var tg in listTacGia)
+            {
+                <li>
+                    <a href="@Url.Action("SachTheoTacGia", "Home", new { id = tg.MaTG })">
+                        @tg.TenTG
+                    </a>
+                </li>
+            }
+        }
+        else
+        {
+            <li><a href="#">Chưa có dữ liệu...</a></li>
+        }
+    </ul>
+</li>
+<li><a href="@Url.Action("Sach", "Home")">Sách</a></li>
+<li><a href="@Url.Action("Contact", "Home")">Liên hệ</a></li>

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<WebApplication1.Models.DONDATHANG>
+
+@{
+    ViewBag.Title = "Lịch sử mua hàng";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<div class="container" style="margin-top: 50px; margin-bottom: 50px;">
+    <h2 class="text-center" style="margin-bottom: 30px; font-weight: bold; text-transform: uppercase;">Lịch sử đơn hàng của bạn</h2>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            Bạn chưa có đơn hàng nào. <a href="@Url.Action("Index", "Home")">Mua sắm ngay!</a>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead style="background-color: #f8f9fa;">
+                    <tr>
+                        <th class="text-center">Mã đơn</th>
+                        <th class="text-center">Ngày đặt</th>
+                        <th class="text-center">Ngày giao (Dự kiến)</th>
+                        <th class="text-center">Tình trạng</th>
+                        <th class="text-center">Thanh toán</th>
+                        <th class="text-center">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center">#@item.MaDonHang</td>
+                            <td class="text-center">@String.Format("{0:dd/MM/yyyy}", item.NgayDat)</td>
+                            <td class="text-center">
+                                @(item.NgayGiao.HasValue ? item.NgayGiao.Value.ToString("dd/MM/yyyy") : "Đang cập nhật")
+                            </td>
+                            <td class="text-center">
+                                @if (item.TinhTrangGiaoHang == true)
+                                {
+                                    <span class="label label-success">Đã giao</span>
+                                }
+                                else
+                                {
+                                    <span class="label label-warning">Đang xử lý</span>
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (item.DaThanhToan == true)
+                                {
+                                    <span class="text-success"><i class="fa fa-check"></i> Đã TT</span>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">Chưa TT</span>
+                                }
+                            </td>
+                            <td class="text-center">
+                                <a href="@Url.Action("ChiTietDonHang", "Home", new { id = item.MaDonHang })" class="btn btn-sm btn-info">
+                                    <i class="fa fa-eye"></i> Xem chi tiết
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

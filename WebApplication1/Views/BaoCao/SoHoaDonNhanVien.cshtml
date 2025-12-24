@@ -1,0 +1,43 @@
+﻿@model int?
+
+@{
+    ViewBag.Title = "Số Hóa Đơn Của Nhân Viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.HasValue)
+{
+    <div class="card p-3" style="max-width: 400px;">
+        <p>Nhân viên có <strong>@Model.Value</strong> hóa đơn.</p>
+    </div>
+
+    <canvas id="chartHoaDonNV" width="400" height="200"></canvas>
+
+    @section Scripts{
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            var ctx = document.getElementById('chartHoaDonNV').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Số Hóa Đơn'],
+                    datasets: [{
+                        label: 'Số Hóa Đơn',
+                        data: [@Model.Value],
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+        </script>
+    }
+}
+else
+{
+    <p>Không tìm thấy dữ liệu.</p>
+}

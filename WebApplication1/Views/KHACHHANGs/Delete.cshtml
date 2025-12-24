@@ -1,0 +1,73 @@
+﻿@model WebApplication1.Models.KHACHHANG
+
+@{
+    ViewBag.Title = "Xóa khách hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        <h3 class="panel-title">Thông tin khách hàng cần xóa</h3>
+    </div>
+    <div class="panel-body">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-md-2">Họ và tên:</label>
+                <div class="col-md-10 form-control-static">
+                    <strong>@Html.DisplayFor(model => model.HoTen)</strong>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Số điện thoại:</label>
+                <div class="col-md-10 form-control-static">
+                    @Html.DisplayFor(model => model.SDT)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Địa chỉ:</label>
+                <div class="col-md-10 form-control-static">
+                    @Html.DisplayFor(model => model.DiaChi)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Email:</label>
+                <div class="col-md-10 form-control-static">
+                    @Html.DisplayFor(model => model.Email)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2">Điểm tích lũy:</label>
+                <div class="col-md-10 form-control-static">
+                    <span class="label label-warning" style="font-size: 100%;">
+                        @Html.DisplayFor(model => model.DiemTichLuy) điểm
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-footer">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Xác nhận xóa" class="btn btn-danger" />
+
+                @Html.ActionLink("Hủy bỏ", "Index", null, new { @class = "btn btn-default" })
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .form-control-static {
+        padding-top: 7px;
+        margin-bottom: 0;
+    }
+</style>

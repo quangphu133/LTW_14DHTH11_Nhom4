@@ -1,0 +1,208 @@
+﻿@model WebApplication1.Models.HomeViewModel
+
+@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+<link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
+
+<style>
+    /* CSS cho nút điều hướng */
+    .owl-prev, .owl-next {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        background-color: #77b748 !important;
+        color: #fff !important;
+        padding: 5px 10px !important;
+        font-size: 20px !important;
+        border-radius: 5px;
+        z-index: 10;
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+
+    .owl-prev {
+        left: -20px;
+    }
+
+    .owl-next {
+        right: -20px;
+    }
+
+        .owl-prev:hover, .owl-next:hover {
+            background-color: #333 !important;
+            opacity: 1;
+        }
+
+    /* Thêm khoảng cách giữa các Section để trang thoáng hơn */
+    .category-section {
+        padding: 40px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+</style>
+
+<div class="tg-innerbanner tg-haslayout tg-parallax tg-bginnerbanner" data-z-index="-100" data-appear-top-offset="600" data-parallax="scroll" data-image-src="/images/parallax/bgparallax-07.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="tg-innerbannercontent">
+                    <h1>@ViewBag.Title</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="tg-sectionspace tg-haslayout category-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="tg-sectionhead">
+                    <h2><span>Mới Cập Nhật</span>Sách Mới Phát Hành</h2>
+                    <a class="tg-btn" href="@Url.Action("Sach", "Home")">Xem tất cả</a>
+                </div>
+            </div>
+
+            @if (Model != null && Model.SachMoi != null && Model.SachMoi.Count > 0)
+            {
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="owl-carousel owl-theme book-carousel">
+                        @foreach (var sach in Model.SachMoi)
+                        {
+                            @RenderBookItem(sach)/* Gọi Helper để vẽ sách cho gọn code */
+                        }
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="col-md-12 text-center">
+                    <div class="alert alert-info">Chưa có sách mới.</div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+@if (Model != null && Model.DsTheLoai != null && Model.DsTheLoai.Count > 0)
+{
+    foreach (var theLoai in Model.DsTheLoai)
+    {
+        // Chỉ hiện thể loại nào có sách
+        if (theLoai.SACHes != null && theLoai.SACHes.Count > 0)
+        {
+            <section class="tg-sectionspace tg-haslayout category-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="tg-sectionhead">
+                                <h2><span>Thể loại</span>@theLoai.TenTL</h2>
+
+                                <a class="tg-btn" href="@Url.Action("SachTheoTheLoai", "Home", new { id = theLoai.MaTL })">
+                                    Xem thêm @theLoai.TenTL
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="owl-carousel owl-theme book-carousel">
+                                @foreach (var sach in theLoai.SACHes)
+                                {
+                                    @RenderBookItem(sach)
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        }
+    }
+}
+
+
+@helper RenderBookItem(WebApplication1.Models.SACH sach)
+{
+    <div class="item" style="padding: 10px;">
+        <div class="tg-postbook" style="margin-bottom: 0; height: 100%;">
+            <figure class="tg-featureimg">
+                <div class="tg-bookimg">
+                    <div class="tg-frontcover">
+                        <a href="@Url.Action("Details", "Home", new { id = sach.MaSach })">
+                            <img src="~/images/books/@sach.AnhBia"
+                                 alt="@sach.TenSach"
+                                 style="width:100%; height: 250px; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+            </figure>
+
+            <div class="tg-postbookcontent">
+                <ul class="tg-bookscategories">
+                    <li>
+                        <a href="@Url.Action("SachTheoTheLoai", "Home", new { id = sach.MaTL })">
+                            @(sach.THELOAI != null ? sach.THELOAI.TenTL : "Đang cập nhật")
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tg-booktitle">
+                    <h3>
+                        <a href="@Url.Action("Details", "Home", new { id = sach.MaSach })"
+                           style="font-weight:bold; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; height: 42px;">
+                            @sach.TenSach
+                        </a>
+                    </h3>
+                </div>
+
+                <span class="tg-bookwriter">
+                    bởi
+                    <a href="@Url.Action("SachTheoTacGia", "Home", new { id = sach.MaTG })">
+                        @(sach.TACGIA != null ? sach.TACGIA.TenTG : "Đang cập nhật")
+                    </a>
+                </span>
+
+                <div style="margin-top: 10px; border-top: 1px solid #eee; padding-top: 10px;">
+                    <span class="tg-bookprice" style="display:block; font-size: 18px; color: #d9534f; font-weight: bold; margin-bottom: 10px;">
+                        @(sach.GiaBan.HasValue ? sach.GiaBan.Value.ToString("#,##0") : "0") đ
+                    </span>
+
+                    <a href="@Url.Action("ThemGioHang", "GioHang", new { iMaSach = sach.MaSach, strURL = Request.Url.ToString() })"
+                       class="btn btn-success btn-block"
+                       style="background-color: #77b748; border-color: #77b748;">
+                        <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    <script src="~/js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Thay vì dùng ID (#newBooksCarousel), ta dùng class (.book-carousel)
+            $(".book-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 10000,
+                autoplayHoverPause: true,
+                navText: ["<", ">"],
+                responsive: {
+                    0: { items: 1 },    // Mobile
+                    600: { items: 3 },  // Tablet
+                    1000: { items: 5 }  // Desktop (5 items)
+                }
+            });
+        });
+    </script>
+}

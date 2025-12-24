@@ -1,0 +1,100 @@
+﻿@model IEnumerable<WebApplication1.Models.sp_DoanhThuTheoNhanVien_Result>
+
+@{
+    ViewBag.Title = "Báo cáo Doanh Thu Theo Nhân Viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model != null && Model.Any())
+{
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">Biểu đồ trực quan</div>
+                <div class="panel-body">
+                    <canvas id="chartDoanhThu"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">Chi tiết số liệu</div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr class="info">
+                                <th>Họ Tên</th>
+                                <th class="text-right">Doanh Thu (VNĐ)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.HoTen</td>
+                                    <td class="text-right">@item.DoanhThu.GetValueOrDefault(0).ToString("N0")</td>
+                                </tr>
+                            }
+                            <tr style="font-weight:bold; background-color:#f9f9f9;">
+                                <td>TỔNG CỘNG</td>
+                                <td class="text-right text-danger">
+                                    @Model.Sum(x => x.DoanhThu.GetValueOrDefault(0)).ToString("N0")
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts{
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+            // Lấy dữ liệu từ Model sang JavaScript an toàn
+            var labels = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.HoTen)));
+            var dataValues = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Select(x => x.DoanhThu.GetValueOrDefault(0))));
+
+            var ctx = document.getElementById('chartDoanhThu').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'bar', // Loại biểu đồ cột
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Doanh Thu (VNĐ)',
+                        data: dataValues,
+                        backgroundColor: 'rgba(54, 162, 235, 0.6)', // Màu xanh dương nhạt
+                        borderColor: 'rgba(54, 162, 235, 1)',       // Viền xanh đậm
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' },
+                        title: { display: true, text: 'Biểu đồ doanh số bán hàng' }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                // Format tiền tệ trên trục Y cho đẹp
+                                callback: function(value, index, values) {
+                                    return value.toLocaleString('vi-VN') + ' đ';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        </script>
+    }
+}
+else
+{
+    <div class="alert alert-warning text-center">
+        <h4>Chưa có dữ liệu doanh thu nào để hiển thị!</h4>
+    </div>
+}

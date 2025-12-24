@@ -1,0 +1,157 @@
+﻿@model WebApplication1.Models.HOADON
+
+@{
+    ViewBag.Title = "Chi tiết hóa đơn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid pt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+            <div class="card shadow mb-4" id="invoice-print">
+                <div class="card-header py-3 bg-white border-bottom-0 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="m-0 font-weight-bold text-primary">
+                            <i class="fas fa-file-invoice me-2"></i>HÓA ĐƠN #@Model.MaHD
+                        </h4>
+                        <span class="text-muted small">Ngày lập: @Model.NgayLap.Value.ToString("dd/MM/yyyy HH:mm")</span>
+                    </div>
+                    <div>
+                        @if (Model.TrangThai == "Đã thanh toán" || Model.TrangThai == "Hoàn thành")
+                        {
+                            <span class="badge bg-success fs-6 px-3 py-2">ĐÃ THANH TOÁN</span>
+                        }
+                        else if (Model.TrangThai == "Đã hủy")
+                        {
+                            <span class="badge bg-secondary fs-6 px-3 py-2">ĐÃ HỦY</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2">@Model.TrangThai</span>
+                        }
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-sm-6">
+                            <h6 class="mb-3 text-uppercase fw-bold text-secondary">Khách hàng:</h6>
+                            <div>
+                                <strong class="fs-5">@(Model.KHACHHANG != null ? Model.KHACHHANG.HoTen : "Khách vãng lai")</strong>
+                            </div>
+                            @if (Model.KHACHHANG != null)
+                            {
+                                <div><i class="fas fa-phone-alt me-2 text-muted"></i> @Model.KHACHHANG.SDT</div>
+                                <div><i class="fas fa-map-marker-alt me-2 text-muted"></i> @(Model.KHACHHANG.DiaChi ?? "Chưa cập nhật")</div>
+                            }
+                        </div>
+                        <div class="col-sm-6 text-sm-end">
+                            <h6 class="mb-3 text-uppercase fw-bold text-secondary">Thông tin cửa hàng:</h6>
+                            <h5 class="fw-bold">NHÀ SÁCH ONLINE</h5>
+                            <div><i class="fas fa-user-tie me-2 text-muted"></i> Nhân viên: <strong>@(Model.NHANVIEN != null ? Model.NHANVIEN.HoTen : "Hệ thống")</strong></div>
+                            <div><i class="fas fa-id-badge me-2 text-muted"></i> Mã NV: @Model.MaNV</div>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead class="table-light text-center">
+                                <tr>
+                                    <th style="width: 5%">#</th>
+                                    <th style="width: 45%" class="text-start">Tên Sách</th>
+                                    <th style="width: 15%">Đơn giá</th>
+                                    <th style="width: 10%">SL</th>
+                                    <th style="width: 25%" class="text-end">Thành tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.CHITIETHOADONs != null && Model.CHITIETHOADONs.Count > 0)
+                                {
+                                    int i = 1;
+                                    foreach (var item in Model.CHITIETHOADONs)
+                                    {
+                                        <tr>
+                                            <td class="text-center">@i</td>
+                                            <td>
+                                                <span class="fw-bold text-primary">@item.SACH.TenSach</span>
+                                            </td>
+                                            <td class="text-center">@String.Format("{0:N0}", item.DonGiaBan)</td>
+                                            <td class="text-center">@item.SoLuong</td>
+                                            <td class="text-end fw-bold">@String.Format("{0:N0}", item.SoLuong * item.DonGiaBan)</td>
+                                        </tr>
+                                        i++;
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="5" class="text-center text-muted fst-italic">Không có dữ liệu chi tiết.</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-5 ms-auto">
+                            <table class="table table-clear">
+                                <tbody>
+                                    <tr>
+                                        <td class="left">
+                                            <strong>Tổng cộng:</strong>
+                                        </td>
+                                        <td class="text-end">
+                                            <strong class="text-danger fs-4">@String.Format("{0:N0}", Model.TongTien) đ</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer bg-light d-flex justify-content-between">
+                    <a href="@Url.Action("Index")" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Quay lại danh sách
+                    </a>
+
+                    <div>
+                        <button onclick="window.print()" class="btn btn-info text-white me-2">
+                            <i class="fas fa-print me-1"></i> In hóa đơn
+                        </button>
+
+                        <a href="@Url.Action("Delete", new { id = Model.MaHD })" class="btn btn-danger">
+                            <i class="fas fa-trash-alt me-1"></i> Xóa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    @@media print {
+        body * {
+            visibility: hidden;
+        }
+
+        #invoice-print, #invoice-print * {
+            visibility: visible;
+        }
+
+        #invoice-print {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .card-footer, .btn, .navbar, .sidebar {
+            display: none !important;
+        }
+    }
+</style>

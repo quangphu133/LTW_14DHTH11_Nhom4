@@ -1,0 +1,101 @@
+﻿@model IEnumerable<WebApplication1.Models.SACH>
+
+@{
+    ViewBag.Title = "Quản Lý Sách";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card shadow-sm m-3">
+    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+        <h5 class="mb-0 text-uppercase fw-bold">Danh Sách Sách</h5>
+
+        <form action="@Url.Action("Index")" method="get" class="d-flex" style="max-width: 400px;">
+            <input type="text" name="searchString" class="form-control me-2" placeholder="Nhập tên sách cần tìm..." value="@Request.QueryString["searchString"]" />
+            <button type="submit" class="btn btn-light text-primary fw-bold">
+                <i class="fas fa-search"></i> Tìm
+            </button>
+        </form>
+    </div>
+
+    <div class="card-body">
+        <div class="mb-3">
+            <a href="@Url.Action("Create")" class="btn btn-success">
+                <i class="fas fa-plus-circle"></i> Thêm Sách Mới
+            </a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-light text-center">
+                    <tr>
+                        <th style="width: 80px;">Ảnh</th>
+                        <th>Tên Sách</th>
+                        <th>Thể Loại</th>
+                        <th>Tác Giả</th>
+                        <th>NXB</th>
+                        <th style="width: 80px;">Tồn</th>
+                        <th>Giá Bán</th>
+                        <th style="width: 150px;">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center p-1">
+                                @if (!string.IsNullOrEmpty(item.AnhBia))
+                                {
+                                    <img src="~/images/books/@item.AnhBia"
+                                         alt="cover"
+                                         style="width: 50px; height: 70px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd;" />
+                                }
+                                else
+                                {
+                                    <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="width: 50px; height: 70px; font-size: 10px; margin: 0 auto; border-radius: 4px;">
+                                        No Image
+                                    </div>
+                                }
+                            </td>
+
+                            <td class="fw-bold text-primary">
+                                @Html.DisplayFor(modelItem => item.TenSach)
+                            </td>
+                            <td>@Html.DisplayFor(modelItem => item.THELOAI.TenTL)</td>
+                            <td>@Html.DisplayFor(modelItem => item.TACGIA.TenTG)</td>
+                            <td>@Html.DisplayFor(modelItem => item.NXB.TenNXB)</td>
+
+                            <td class="text-center @(item.SoLuongTon < 10 ? "text-danger fw-bold" : "")">
+                                @Html.DisplayFor(modelItem => item.SoLuongTon)
+                            </td>
+
+                            <td class="text-end fw-bold text-success">
+                                @string.Format("{0:N0} đ", item.GiaBan)
+                            </td>
+
+                            <td class="text-center">
+                                <a href="@Url.Action("Edit", new { id = item.MaSach })" class="btn btn-sm btn-warning mb-1" title="Sửa thông tin">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a href="@Url.Action("Delete", new { id = item.MaSach })" class="btn btn-sm btn-danger mb-1" title="Xóa sách">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+
+                                @* Nếu đây là trang Admin thì nút này hơi lạ, nhưng tôi vẫn giữ lại và làm đẹp nó *@
+                                <a href="@Url.Action("ThemGioHang", "HOADONs", new { id = item.MaSach })" class="btn btn-sm btn-info mb-1" title="Thêm vào giỏ">
+                                    <i class="fas fa-cart-plus"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        @if (Model.Count() == 0)
+        {
+            <div class="alert alert-warning text-center mt-3">
+                Không tìm thấy cuốn sách nào!
+            </div>
+        }
+    </div>
+</div>

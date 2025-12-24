@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Hệ Thống Quản Lý Nhà Sách</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* 1. Header & Brand */
+        .navbar-brand {
+            font-weight: bold;
+            letter-spacing: 1px;
+            background-color: rgba(0, 0, 0, .25);
+            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+        }
+
+        /* 2. Sidebar Layout */
+        .sidebar {
+            position: fixed;
+            top: 56px;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            padding: 0;
+            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+            background-color: #f8f9fa;
+        }
+
+        .sidebar-sticky {
+            position: relative;
+            top: 0;
+            height: calc(100vh - 48px);
+            padding-top: .5rem;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        /* Style Menu */
+        .nav-link {
+            color: #333;
+            font-weight: 500;
+            padding: 10px 15px;
+        }
+
+            .nav-link:hover {
+                background-color: #e9ecef;
+                color: #000;
+            }
+
+            .nav-link.active {
+                color: #007bff;
+            }
+
+            .nav-link i {
+                margin-right: 10px;
+                width: 20px;
+                text-align: center;
+            }
+
+        .sub-menu {
+            background-color: #fff;
+            border-left: 3px solid #343a40;
+        }
+
+            .sub-menu .nav-link {
+                padding-left: 45px;
+                font-size: 0.9rem;
+                color: #666;
+            }
+
+                .sub-menu .nav-link:hover {
+                    color: #000;
+                    background-color: #f1f1f1;
+                }
+
+        /* Main Content */
+        main {
+            padding-top: 0;
+            background-color: #fff;
+            min-height: calc(100vh - 56px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-wrapper {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 15px 0;
+            border-top: 1px solid #dee2e6;
+            background-color: #f8f9fa;
+            text-align: center;
+            font-size: 0.9rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    @{
+        // Lấy thông tin từ Session, nếu null thì để trống
+        string userRole = Session["ChucVu"] != null ? Session["ChucVu"].ToString() : "Admin";
+        string userName = Session["SqlUser"] != null ? Session["SqlUser"].ToString() : "Quản trị viên";
+    }
+
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">
+            <i class="fas fa-book-open"></i> QL NHÀ SÁCH
+        </a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="w-100"></div>
+
+        <div class="navbar-nav px-3 d-flex flex-row align-items-center">
+
+            <div class="nav-item text-nowrap me-3">
+                <span class="nav-link text-white" style="cursor: default">
+                    Xin chào, <strong>@userName</strong> (@userRole) <i class="fas fa-user-circle"></i>
+                </span>
+            </div>
+
+            <div class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="@Url.Action("Logout", "Users", new { area = "" })">
+                    <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3 sidebar-sticky">
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#submenu1" data-bs-toggle="collapse">
+                                <i class="fas fa-book"></i> Quản lý Sách
+                                <i class="fas fa-chevron-down float-end mt-1"></i>
+                            </a>
+                            <div class="collapse sub-menu" id="submenu1">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "SACHes")">Danh sách Sách</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "TACGIAs")">Tác giả</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "THELOAIs")">Thể loại</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#submenu2" data-bs-toggle="collapse">
+                                <i class="fas fa-truck"></i> Nhập hàng
+                                <i class="fas fa-chevron-down float-end mt-1"></i>
+                            </a>
+                            <div class="collapse sub-menu" id="submenu2">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "PHIEUNHAPs")">Lịch sử nhập hàng</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Create", "PHIEUNHAPs")">Tạo phiếu nhập</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "NXBs")">Nhà cung cấp (NXB)</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#submenu3" data-bs-toggle="collapse">
+                                <i class="fas fa-shopping-cart"></i> Bán hàng
+                                <i class="fas fa-chevron-down float-end mt-1"></i>
+                            </a>
+                            <div class="collapse sub-menu" id="submenu3">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Create", "HOADONs")">Lập hóa đơn mới</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "HOADONs")">Lịch sử hóa đơn</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "KHACHHANGs")">
+                                <i class="fas fa-users"></i> Khách hàng
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index", "BaoCao")">
+                                <i class="fas fa-chart-line"></i> Báo cáo thống kê
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-danger" href="@Url.Action("Index", "NHANVIENs")">
+                                <i class="fas fa-user-cog"></i> Quản lý Nhân viên
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 p-0">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom px-4">
+                    <h1 class="h2">@ViewBag.Title</h1>
+                </div>
+
+                <div class="content-wrapper px-4">
+                    @RenderBody()
+                </div>
+
+                <footer>
+                    <p class="m-0">&copy; @DateTime.Now.Year - Hệ Thống Quản Lý Nhà Sách (Nhóm 5)</p>
+                </footer>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

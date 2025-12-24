@@ -1,0 +1,56 @@
+﻿@model WebApplication1.Models.KHACHHANG
+
+@{
+    ViewBag.Title = "Chi tiết khách hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thông tin chi tiết khách hàng</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Họ và tên
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+            Số điện thoại
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+
+        <dt>
+            Địa chỉ
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            Điểm tích lũy
+        </dt>
+        <dd>
+            <span class="label label-primary" style="font-size: 100%;">
+                @Html.DisplayFor(model => model.DiemTichLuy) điểm
+            </span>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa thông tin", "Edit", new { id = Model.MaKH }, new { @class = "btn btn-warning" })
+
+    @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-default" })
+</p>

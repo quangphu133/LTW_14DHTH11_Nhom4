@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WebApplication1.Controllers.KhachHangTimKiemViewModel>
+
+@{
+    ViewBag.Title = "Kết quả tìm kiếm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="form-horizontal">
+    <h4>Kết quả tìm kiếm cho: "@ViewBag.TuKhoa"</h4>
+    <hr />
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="success">
+                <th>Họ Tên</th>
+                <th>Số điện thoại</th>
+                <th>Địa Chỉ</th>
+                <th>Điểm Tích Lũy</th>
+                <th>Hạng Thành Viên</th>
+                <th>Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.HoTen</td>
+                        <td>@item.SDT</td>
+                        <td>@item.DiaChi</td>
+                        <td>@item.DiemTichLuy</td>
+                        <td>
+                            <span class="label label-warning" style="font-size: 12px;">@item.HangThanhVien</span>
+                        </td>
+                        <td>
+                            @Html.ActionLink("Chi tiết", "Details", new { id = item.MaKH }, new { @class = "btn btn-info btn-xs" })
+                            @Html.ActionLink("Sửa", "Edit", new { id = item.MaKH }, new { @class = "btn btn-warning btn-xs" })
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-danger">Không tìm thấy khách hàng nào phù hợp.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="form-group">
+        @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-default" })
+    </div>
+</div>

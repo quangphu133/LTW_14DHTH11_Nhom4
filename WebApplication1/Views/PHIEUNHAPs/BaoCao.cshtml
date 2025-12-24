@@ -1,0 +1,127 @@
+﻿@model IEnumerable<WebApplication1.Models.BaoCaoNXB>
+
+@{
+    ViewBag.Title = "Báo cáo Nhập hàng theo Nhà Cung Cấp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+
+    <div class="mb-3">
+        <a href="@Url.Action("Index")" class="btn btn-outline-secondary btn-sm">
+            <i class="fa fa-arrow-left"></i> Quay lại lịch sử nhập kho
+        </a>
+    </div>
+
+    <h2 class="text-center text-uppercase text-primary" style="font-weight:bold;">
+        Báo cáo đánh giá Nhà Cung Cấp
+    </h2>
+    <hr />
+
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-light">
+            <strong><i class="fa fa-filter"></i> Bộ lọc thời gian</strong>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("BaoCao", "PHIEUNHAPs", FormMethod.Post, new { @class = "form-inline justify-content-center" }))
+            {
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="Thang" class="mr-2">Tháng:</label>
+                    <input type="number" class="form-control" name="Thang" id="Thang"
+                           value="@ViewBag.Thang" min="1" max="12" required style="width: 80px;" />
+                </div>
+
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="Nam" class="mr-2">Năm:</label>
+                    <input type="number" class="form-control" name="Nam" id="Nam"
+                           value="@ViewBag.Nam" min="2000" max="2100" required style="width: 100px;" />
+                </div>
+
+                <button type="submit" class="btn btn-primary mb-2">
+                    <i class="fa fa-search"></i> Xem báo cáo
+                </button>
+            }
+        </div>
+    </div>
+
+    @if (TempData["ThongBao"] != null)
+    {
+        <div class="alert alert-warning text-center">
+            @TempData["ThongBao"]
+        </div>
+    }
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger text-center">
+            @ViewBag.Error
+        </div>
+    }
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover shadow-sm">
+                <thead class="thead-dark text-center">
+                    <tr>
+                        <th>STT</th>
+                        <th>Nhà Xuất Bản (Nhà Cung Cấp)</th>
+                        <th>Số Đơn Nhập</th>
+                        <th>Tổng Chi Phí</th>
+                        <th>Đánh Giá Hiệu Quả</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{ int stt = 1; decimal tongCongCaThang = 0; }
+                    @foreach (var item in Model)
+                    {
+                        tongCongCaThang += item.TongTienDaChi;
+                        <tr>
+                            <td class="text-center">@(stt++)</td>
+                            <td style="font-weight: 600;">@item.TenNXB</td>
+                            <td class="text-center">@item.SoDonNhap</td>
+                            <td class="text-right text-danger font-weight-bold">
+                                @string.Format("{0:N0} đ", item.TongTienDaChi)
+                            </td>
+                            <td class="text-center">
+                                @if (item.DanhGia.Contains("VIP"))
+                                {
+                                    <span class="badge badge-danger p-2">@item.DanhGia <i class="fa fa-star"></i></span>
+                                }
+                                else if (item.DanhGia.Contains("thường"))
+                                {
+                                    <span class="badge badge-success p-2">@item.DanhGia</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-secondary p-2">@item.DanhGia</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr class="bg-light">
+                        <td colspan="3" class="text-right font-weight-bold text-uppercase">
+                            Tổng chi phí nhập hàng tháng @ViewBag.Thang/@ViewBag.Nam:
+                        </td>
+                        <td class="text-right text-danger font-weight-bold" style="font-size: 1.2em;">
+                            @string.Format("{0:N0} đ", tongCongCaThang)
+                        </td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4 mb-5">
+            <a href="@Url.Action("Index")" class="btn btn-secondary">
+                <i class="fa fa-arrow-left"></i> Quay lại
+            </a>
+
+            <button onclick="window.print()" class="btn btn-dark">
+                <i class="fa fa-print"></i> In Báo Cáo
+            </button>
+        </div>
+    }
+</div>

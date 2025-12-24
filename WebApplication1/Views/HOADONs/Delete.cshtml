@@ -1,0 +1,82 @@
+﻿@model WebApplication1.Models.HOADON
+
+@{
+    ViewBag.Title = "Xóa hóa đơn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid pt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow mb-4 border-danger">
+                <div class="card-header py-3 bg-danger text-white">
+                    <h5 class="m-0 font-weight-bold">
+                        <i class="fas fa-trash-alt me-2"></i>XÁC NHẬN XÓA HÓA ĐƠN #@Model.MaHD
+                    </h5>
+                </div>
+
+                <div class="card-body">
+                    <div class="alert alert-warning text-center shadow-sm" role="alert">
+                        <i class="fas fa-exclamation-triangle fa-2x mb-2 text-danger"></i>
+                        <br />
+                        <strong>CẢNH BÁO QUAN TRỌNG:</strong>
+                        <p class="mb-0 mt-2">
+                            Bạn đang thực hiện xóa hóa đơn này.<br />
+                            Hệ thống sẽ <strong>xóa vĩnh viễn</strong> lịch sử giao dịch và <br />
+                            <span class="text-danger fw-bold">HOÀN TRẢ SỐ LƯỢNG SÁCH VÀO KHO</span>.
+                        </p>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th class="bg-light w-35">Khách hàng:</th>
+                                    <td>
+                                        @if (Model.KHACHHANG != null)
+                                        {
+                                            <span class="fw-bold">@Model.KHACHHANG.HoTen</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">Khách vãng lai</span>
+                                        }
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-light">Nhân viên lập:</th>
+                                    <td>@(Model.NHANVIEN != null ? Model.NHANVIEN.HoTen : "Unknown")</td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-light">Ngày lập:</th>
+                                    <td>@Model.NgayLap.Value.ToString("dd/MM/yyyy HH:mm")</td>
+                    </div>
+                    <tr>
+                        <th class="bg-light">Tổng tiền:</th>
+                        <td class="text-danger fw-bold fs-5">@String.Format("{0:N0}", Model.TongTien) đ</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <hr class="my-4" />
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="@Url.Action("Index")" class="btn btn-secondary px-4">
+                            <i class="fas fa-times me-2"></i> Hủy bỏ
+                        </a>
+
+                        <button type="submit" class="btn btn-danger px-4 fw-bold shadow-sm">
+                            <i class="fas fa-trash-alt me-2"></i> Xác nhận Xóa & Hoàn kho
+                        </button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+</div>

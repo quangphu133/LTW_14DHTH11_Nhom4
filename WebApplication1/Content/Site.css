@@ -1,0 +1,146 @@
+﻿/* --- CSS MINI CART GIỐNG MẪU --- */
+
+.header-cart-box {
+    position: relative;
+    display: inline-block;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+/* Dropdown chính */
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px; /* Độ rộng giống mẫu */
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    z-index: 99999;
+    padding: 20px;
+    border-top: 3px solid #77b748; /* Viền xanh trên cùng */
+}
+
+.header-cart-box:hover .cart-dropdown {
+    display: block;
+}
+
+/* Danh sách sản phẩm */
+.cart-list-container {
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee; /* Đường kẻ mờ ngăn cách */
+}
+
+.cart-item-row {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.item-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #f0f0f0;
+    margin-right: 15px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-name {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+    .item-name a {
+        color: #333;
+        text-decoration: none;
+    }
+
+        .item-name a:hover {
+            color: #77b748;
+        }
+
+.item-price {
+    font-weight: bold;
+    color: #333;
+    font-size: 13px;
+}
+
+/* Phần Footer: Clear cart & Subtotal */
+.cart-footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #666;
+}
+
+.clear-cart a {
+    color: #999;
+    text-decoration: none;
+}
+
+    .clear-cart a:hover {
+        color: #d9534f;
+    }
+
+.subtotal .amount {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+/* Nút bấm */
+.cart-buttons-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+    .cart-buttons-row .btn {
+        flex: 1;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 13px;
+        font-weight: 600;
+        border-radius: 3px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+
+/* Nút XEM GIỎ HÀNG (Màu xanh) */
+.btn-view-cart {
+    background-color: #77b748;
+    color: #fff;
+    border: 1px solid #77b748;
+}
+
+    .btn-view-cart:hover {
+        background-color: #66a13a;
+        color: #fff;
+    }
+
+/* Nút THANH TOÁN (Màu trắng viền xám) */
+.btn-checkout {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+    .btn-checkout:hover {
+        background-color: #333;
+        color: #fff;
+        border-color: #333;
+    }
+
+.header-cart-box:hover .cart-dropdown {
+    display: block !important;
+}

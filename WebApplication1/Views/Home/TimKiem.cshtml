@@ -1,0 +1,116 @@
+﻿@model IEnumerable<WebApplication1.Models.SACH>
+
+@{
+    ViewBag.Title = ViewBag.TieuDe ?? "Kết quả tìm kiếm";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<div class="tg-innerbanner tg-haslayout tg-parallax tg-bginnerbanner" data-z-index="-100" data-appear-top-offset="600" data-parallax="scroll" data-image-src="/images/parallax/bgparallax-07.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="tg-innerbannercontent">
+                    <h1>@ViewBag.Title</h1>
+                    <ol class="tg-breadcrumb">
+                        <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                        <li class="tg-active">Tìm kiếm</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main id="tg-main" class="tg-main tg-haslayout">
+    <div class="tg-sectionspace tg-haslayout">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="tg-content" class="tg-content">
+                        <div class="tg-products">
+
+                            <div class="tg-sectionhead" style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 15px; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap;">
+
+                                <div style="text-align: left;">
+                                    <h2><span>Tìm kiếm</span>@ViewBag.Title</h2>
+                                </div>
+
+                                <div>
+                                    <p style="margin: 0; font-size: 16px; color: #555;">
+                                        Tìm thấy: <span style="color: #77b748; font-weight: bold; font-size: 24px;">@(Model != null ? Model.Count() : 0)</span> kết quả
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                @if (Model != null && Model.Count() > 0)
+                                {
+                                    foreach (var sach in Model)
+                                    {
+                                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                            <div class="tg-postbook" style="margin-bottom: 30px; height: 100%;">
+
+                                                <figure class="tg-featureimg">
+                                                    <div class="tg-bookimg">
+                                                        <div class="tg-frontcover">
+                                                            <a href="@Url.Action("Details", "Home", new { id = sach.MaSach })">
+                                                                <img src="~/images/books/@sach.AnhBia"
+                                                                     alt="@sach.TenSach"
+                                                                     style="width:100%; height: 260px; object-fit: cover;">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </figure>
+
+                                                <div class="tg-postbookcontent">
+                                                    <ul class="tg-bookscategories">
+                                                        <li><a href="#">@(sach.THELOAI != null ? sach.THELOAI.TenTL : "Khác")</a></li>
+                                                    </ul>
+
+                                                    <div class="tg-booktitle">
+                                                        <h3>
+                                                            <a href="@Url.Action("Details", "Home", new { id = sach.MaSach })"
+                                                               style="font-weight:bold; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; height: 42px;">
+                                                                @sach.TenSach
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+
+                                                    <span class="tg-bookwriter">bởi <a href="#">@(sach.TACGIA != null ? sach.TACGIA.TenTG : "Đang cập nhật")</a></span>
+
+                                                    <div style="margin-top: 10px; border-top: 1px solid #eee; padding-top: 10px;">
+                                                        <span class="tg-bookprice" style="display:block; font-size: 18px; color: #d9534f; font-weight: bold; margin-bottom: 5px;">
+                                                            @(sach.GiaBan.HasValue ? sach.GiaBan.Value.ToString("#,##0") : "0") đ
+                                                        </span>
+
+                                                        <a class="btn btn-success btn-block"
+                                                           style="background-color: #77b748; border-color: #77b748;"
+                                                           href="@Url.Action("ThemGioHang", "GioHang", new { iMaSach = sach.MaSach, strURL = Request.Url.ToString() })">
+                                                            <i class="fa fa-shopping-cart"></i> Thêm vào giỏ
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <div class="col-md-12">
+                                        <div class="alert alert-warning text-center" style="margin-top: 20px; padding: 40px;">
+                                            <i class="fa fa-search" style="font-size: 40px; color: #ccc; margin-bottom: 10px;"></i>
+                                            <h3>Rất tiếc, không tìm thấy cuốn sách nào!</h3>
+                                            <p>Hãy thử tìm kiếm với từ khóa khác (ví dụ: tên sách, tên tác giả...).</p>
+                                            <br />
+                                            <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Quay về trang chủ</a>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

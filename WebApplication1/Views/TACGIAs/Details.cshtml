@@ -1,0 +1,58 @@
+﻿@model WebApplication1.Models.TACGIA
+
+@{
+    ViewBag.Title = "Chi tiết Tác giả";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid pt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 bg-info text-white">
+                    <h5 class="m-0 font-weight-bold">
+                        <i class="fas fa-info-circle me-2"></i>Chi Tiết Hồ Sơ Tác Giả
+                    </h5>
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th class="bg-light" style="width: 35%;">
+                                    @Html.DisplayNameFor(model => model.TenTG)
+                                </th>
+                                <td>
+                                    <span class="fw-bold text-primary fs-5">
+                                        @Html.DisplayFor(model => model.TenTG)
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="bg-light">
+                                    @Html.DisplayNameFor(model => model.QueQuan)
+                                </th>
+                                <td>
+                                    <i class="fas fa-map-marker-alt text-secondary me-2"></i>
+                                    @Html.DisplayFor(model => model.QueQuan)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <hr class="my-4" />
+
+                    <div class="d-flex justify-content-between">
+                        <a href="@Url.Action("Index")" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left me-1"></i> Quay lại danh sách
+                        </a>
+
+                        <a href="@Url.Action("Edit", new { id = Model.MaTG })" class="btn btn-warning">
+                            <i class="fas fa-edit me-1"></i> Chỉnh sửa thông tin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

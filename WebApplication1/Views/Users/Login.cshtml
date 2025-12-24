@@ -1,0 +1,172 @@
+﻿@model WebApplication1.Models.LoginViewModel
+@{
+    ViewBag.Title = "Đăng Nhập";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=2690&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-card {
+            width: 400px;
+            max-width: 90%;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+
+        .card-header {
+            background-color: #77b748;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: none;
+        }
+
+            .card-header h3 {
+                margin: 0;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+
+        .btn-submit {
+            background-color: #77b748;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            .btn-submit:hover {
+                background-color: #5da32b;
+            }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 40px;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="card-header">
+            <h3>Đăng Nhập</h3>
+            <p style="margin: 5px 0 0; font-size: 13px; opacity: 0.9;">Chào mừng bạn quay trở lại!</p>
+        </div>
+
+        <div style="padding: 25px;">
+            @using (Html.BeginForm("Login", "Users", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-group">
+                    <label style="font-weight: bold; color: #555; display:block; margin-bottom: 5px;">Tên đăng nhập</label>
+
+                    @Html.TextBoxFor(m => m.Username, new
+                    {
+                        @class = "form-control",
+                        placeholder = "Username",
+
+                        // Đặt ID để JS bắt được
+                        id = "username-field",
+
+                        // CSS ép hiển thị chữ thường (Quan trọng về mặt thị giác)
+                        style = "text-transform: lowercase;",
+
+                        // Các thuộc tính chặn bàn phím ảo
+                        autocapitalize = "none",
+                        spellcheck = "false",
+                        autocomplete = "off",
+                        autocorrect = "off"
+                    })
+                </div>
+
+                <div class="form-group">
+                    <label style="font-weight: bold; color: #555; display:block; margin-bottom: 5px;">Mật khẩu</label>
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
+                </div>
+
+                if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger" style="color: red; text-align: center; margin-bottom: 15px;">
+                        @ViewBag.Error
+                    </div>
+                }
+
+                <button type="submit" class="btn-submit">
+                    Đăng Nhập
+                </button>
+            }
+        </div>
+
+        <div style="background: #f9f9f9; padding: 15px; text-align: center; border-top: 1px solid #eee;">
+            <p style="margin: 0; font-size: 14px;">
+                Chưa có tài khoản?
+                <a href="@Url.Action("Register", "Users")" style="color: #77b748; font-weight: bold; text-decoration: none;">Đăng ký mới</a>
+            </p>
+            <div style="margin-top: 10px;">
+                <a href="@Url.Action("Index", "Home")" style="color: #888; font-size: 12px; text-decoration: none;">
+                    <i class="fa fa-arrow-left"></i> Về trang chủ
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Lấy thẻ input theo ID
+        var usernameInput = document.getElementById('username-field');
+
+        if (usernameInput) {
+            // Lắng nghe sự kiện khi người dùng nhập liệu
+            usernameInput.addEventListener('input', function (e) {
+                // Lưu vị trí con trỏ chuột
+                var start = this.selectionStart;
+                var end = this.selectionEnd;
+
+                // Chuyển toàn bộ giá trị thành chữ thường
+                this.value = this.value.toLowerCase();
+
+                // Đặt lại con trỏ chuột về vị trí cũ
+                this.setSelectionRange(start, end);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿@model WebApplication1.Models.THELOAI
+
+@{
+    ViewBag.Title = "Thêm Thể Loại Mới";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mt-3">Thêm Thể Loại Mới</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-group mb-3">
+                    <label class="control-label fw-bold">Tên Thể Loại</label>
+                    <div class="">
+                        @Html.EditorFor(model => model.TenTL, new { htmlAttributes = new { @class = "form-control", @placeholder = "Nhập tên thể loại sách..." } })
+
+                        @Html.ValidationMessageFor(model => model.TenTL, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="submit" value="Lưu lại" class="btn btn-success" />
+                    @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary" })
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

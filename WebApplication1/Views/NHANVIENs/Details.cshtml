@@ -1,0 +1,69 @@
+﻿@model WebApplication1.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Thông tin Nhân viên</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgaySinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgaySinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChucVu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChucVu)
+        </dd>
+
+        <br />
+        <dt style="color: #337ab7;">Tài khoản hệ thống</dt>
+        <dd>
+            @if (Model.Users != null && Model.Users.Count > 0)
+            {
+                foreach (var user in Model.Users)
+                {
+                    <div style="margin-bottom: 5px; border-left: 3px solid #ddd; padding-left: 10px;">
+                        <strong>Username:</strong> @user.Username <br />
+                        <strong>Quyền (Role):</strong> @user.Role
+                    </div>
+                }
+            }
+            else
+            {
+                <span class="text-muted">Chưa có tài khoản liên kết</span>
+            }
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaNV }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

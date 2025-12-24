@@ -1,0 +1,71 @@
+﻿@model IEnumerable<WebApplication1.Models.KHACHHANG>
+
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+    <div class="col-md-6">
+        <h2>Quản lý Khách Hàng</h2>
+    </div>
+
+    <div class="col-md-6 text-right" style="margin-top: 20px;">
+        @using (Html.BeginForm("TimKiem", "KHACHHANGs", FormMethod.Get, new { @class = "form-inline" }))
+        {
+            <div class="input-group">
+                <input type="text" name="tuKhoa" class="form-control" placeholder="Nhập tên hoặc SĐT..." required>
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Tìm kiếm</button>
+                </span>
+            </div>
+        }
+    </div>
+</div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+<p>
+    @Html.ActionLink("+ Thêm Khách Hàng Mới", "Create", null, new { @class = "btn btn-success" })
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr class="info">
+            <th>Họ Tên</th>
+            <th>SĐT</th>
+            <th>Địa Chỉ</th>
+            <th>Email</th>
+            <th>Điểm</th>
+            <th style="width: 350px;">Chức năng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.HoTen)</td>
+                <td>@Html.DisplayFor(modelItem => item.SDT)</td>
+                <td>@Html.DisplayFor(modelItem => item.DiaChi)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td style="font-weight:bold; color:red">
+                    @Html.DisplayFor(modelItem => item.DiemTichLuy)
+                </td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = item.MaKH })" class="btn btn-warning btn-xs">Sửa</a>
+
+                    <a href="@Url.Action("DoiDiem", new { id = item.MaKH })" class="btn btn-success btn-xs">Đổi điểm</a>
+
+                    <a href="@Url.Action("TichDiem", new { id = item.MaKH })" class="btn btn-primary btn-xs">Tích điểm</a>
+
+                    <a href="@Url.Action("LichSuChiTiet", new { id = item.MaKH })" class="btn btn-info btn-xs">Lịch sử</a>
+
+                    <a href="@Url.Action("Delete", new { id = item.MaKH })" class="btn btn-danger btn-xs">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

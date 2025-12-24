@@ -1,0 +1,73 @@
+﻿@model WebApplication1.Models.THELOAI
+
+@{
+    ViewBag.Title = "Chi tiết Thể Loại";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="text-primary">Chi tiết Thể Loại</h2>
+        <div>
+            @Html.ActionLink("Sửa", "Edit", new { id = Model.MaTL }, new { @class = "btn btn-warning" })
+            @Html.ActionLink("Quay lại", "Index", null, new { @class = "btn btn-secondary ms-2" })
+        </div>
+    </div>
+
+    <div class="card border-info mb-4 shadow-sm">
+        <div class="card-body bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="card-title text-info fw-bold">@Model.TenTL</h4>
+                    <p class="text-muted mb-0">Mã thể loại: #@Model.MaTL</p>
+                </div>
+                <div class="col-md-6 text-end d-flex align-items-center justify-content-end">
+                    <span class="fs-5 me-2">Tổng số sách:</span>
+                    <span class="badge bg-success fs-5">
+                        @(Model.SACHes != null ? Model.SACHes.Count : 0)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="mt-4 mb-3"><i class="fas fa-book"></i> Danh sách sách thuộc thể loại này</h4>
+
+    @if (Model.SACHes != null && Model.SACHes.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Mã Sách</th>
+                        <th>Tên Sách</th>
+                        <th>Tác Giả</th>
+                        <th>Tồn Kho</th>
+                        <th>Giá Bán</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var sach in Model.SACHes)
+                    {
+                        <tr>
+                            <td>@sach.MaSach</td>
+                            <td class="fw-bold">@sach.TenSach</td>
+                            <td>@(sach.TACGIA != null ? sach.TACGIA.TenTG : "---")</td>
+                            <td class="@(sach.SoLuongTon < 10 ? "text-danger fw-bold" : "")">
+                                @sach.SoLuongTon
+                            </td>
+                            <td>@string.Format("{0:N0}", sach.GiaBan)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning text-center p-4" role="alert">
+            <i class="fas fa-box-open fa-3x mb-3 text-muted"></i><br />
+            Hiện chưa có cuốn sách nào thuộc thể loại <strong>@Model.TenTL</strong>.
+        </div>
+    }
+</div>

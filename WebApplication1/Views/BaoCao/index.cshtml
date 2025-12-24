@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Báo Cáo";
+}
+
+<div>
+    <p>
+        <a href="@Url.Action("DoanhThuNhanVien", "BaoCao")" class="btn btn-primary">Doanh Thu Nhân Viên</a>
+        <a href="@Url.Action("SoSachNhap", "BaoCao")" class="btn btn-success">Số Sách Nhập</a>
+        <a href="@Url.Action("SoHoaDon", "BaoCao")" class="btn btn-info">Số Hóa Đơn</a>
+        <a href="@Url.Action("DoanhThuTheoNgay", "BaoCao")" class="btn btn-dark">
+            Doanh Thu Theo Ngày
+        </a>
+
+    </p>
+
+    <h4>Số Hóa Đơn Theo Nhân Viên</h4>
+
+    @* Form gửi GET đến SoHoaDonNhanVien *@
+    @using (Html.BeginForm("SoHoaDonNhanVien", "BaoCao", FormMethod.Get))
+    {
+        <select name="maNV" class="form-control" style="width:200px; display:inline-block;">
+            <option value="">-- Chọn nhân viên --</option>
+            @foreach (var nv in ViewBag.DSNhanVien as SelectList)
+            {
+                <option value="@nv.Value">@nv.Text</option>
+            }
+        </select>
+        <button type="submit" class="btn btn-warning">Xem</button>
+    }
+</div>

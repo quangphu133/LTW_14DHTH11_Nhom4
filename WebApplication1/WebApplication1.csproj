@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E742A51-3FEC-4675-BE70-6E6F04AD7306}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44334</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaoCaoController.cs" />
+    <Compile Include="Controllers\BaseAdminController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
+    <Compile Include="Controllers\HOADONsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KHACHHANGsController.cs" />
+    <Compile Include="Controllers\NHANVIENsController.cs" />
+    <Compile Include="Controllers\NXBsController.cs" />
+    <Compile Include="Controllers\PHIEUNHAPsController.cs" />
+    <Compile Include="Controllers\SACHesController.cs" />
+    <Compile Include="Controllers\TACGIAsController.cs" />
+    <Compile Include="Controllers\THELOAIsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Filters\RoleAuthorizeAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModel.cs" />
+    <Compile Include="Models\BaoCaoNXB.cs" />
+    <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\CHITIETDONHANG.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHITIETHOADON.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHITIETPHIEUNHAP.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DONDATHANG.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fn_TimKiemKhachHang_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fn_TimKiemSach_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GioHang.cs" />
+    <Compile Include="Models\HOADON.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HomeViewModel.cs" />
+    <Compile Include="Models\KHACHHANG.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LOG_HOADON.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LOG_NHANVIEN.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NHANVIEN.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NXB.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PHIEUNHAP.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLNHASACH.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHASACH.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLNHASACH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLNHASACH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNHASACH.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SACH.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_BaoCaoNhapHangTheoNXB_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_CapNhatThongTinKhach_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_DoanhThuTheoNgay_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_DoanhThuTheoNhanVien_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_DoiDiemGiamGia_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_ThemKhachHangMoi_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_ThongKeSoSachNhap_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_ThongKe_SoLuongHoaDon_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_TichDiem_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_XemChiTietLichSuMuaHang_Result.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TACGIA.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\THELOAI.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\v_DanhSachSachFull.cs">
+      <DependentUpon>QLNHASACH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\color-purple.css" />
+    <Content Include="css\color.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\icomoon.css" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\owl.theme.default.min.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\transitions.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\icomoonbd7d.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="images\books\sach_1.jpg" />
+    <Content Include="images\books\sach_10.jpg" />
+    <Content Include="images\books\sach_11.jpg" />
+    <Content Include="images\books\sach_12.jpg" />
+    <Content Include="images\books\sach_13.jpg" />
+    <Content Include="images\books\sach_14.jpg" />
+    <Content Include="images\books\sach_15.jpg" />
+    <Content Include="images\books\sach_16.jpg" />
+    <Content Include="images\books\sach_17.jpg" />
+    <Content Include="images\books\sach_18.jpg" />
+    <Content Include="images\books\sach_19.jpg" />
+    <Content Include="images\books\sach_2.jpg" />
+    <Content Include="images\books\sach_20.jpg" />
+    <Content Include="images\books\sach_21.jpg" />
+    <Content Include="images\books\sach_22.jpg" />
+    <Content Include="images\books\sach_23.jpg" />
+    <Content Include="images\books\sach_24.jpg" />
+    <Content Include="images\books\sach_25.jpg" />
+    <Content Include="images\books\sach_26.jpg" />
+    <Content Include="images\books\sach_27.jpg" />
+    <Content Include="images\books\sach_28.jpg" />
+    <Content Include="images\books\sach_29.jpg" />
+    <Content Include="images\books\sach_3.jpg" />
+    <Content Include="images\books\sach_30.jpg" />
+    <Content Include="images\books\sach_31.jpg" />
+    <Content Include="images\books\sach_32.jpg" />
+    <Content Include="images\books\sach_33.jpg" />
+    <Content Include="images\books\sach_34.jpg" />
+    <Content Include="images\books\sach_35.jpg" />
+    <Content Include="images\books\sach_36.jpg" />
+    <Content Include="images\books\sach_37.jpg" />
+    <Content Include="images\books\sach_38.jpg" />
+    <Content Include="images\books\sach_39.jpg" />
+    <Content Include="images\books\sach_4.jpg" />
+    <Content Include="images\books\sach_40.jpg" />
+    <Content Include="images\books\sach_5.jpg" />
+    <Content Include="images\books\sach_6.jpg" />
+    <Content Include="images\books\sach_7.jpg" />
+    <Content Include="images\books\sach_8.jpg" />
+    <Content Include="images\books\sach_9.jpg" />
+    <Content Include="layout_nhasach_thamkhao\404error.html" />
+    <Content Include="layout_nhasach_thamkhao\aboutus.html" />
+    <Content Include="layout_nhasach_thamkhao\apple-touch-icon.png" />
+    <Content Include="layout_nhasach_thamkhao\authordetail.html" />
+    <Content Include="layout_nhasach_thamkhao\authors.html" />
+    <Content Include="layout_nhasach_thamkhao\comingsoon.html" />
+    <Content Include="layout_nhasach_thamkhao\contactus.html" />
+    <Content Include="layout_nhasach_thamkhao\index-2.html" />
+    <Content Include="layout_nhasach_thamkhao\index.html" />
+    <Content Include="layout_nhasach_thamkhao\indexv2.html" />
+    <Content Include="layout_nhasach_thamkhao\indexv3.html" />
+    <Content Include="layout_nhasach_thamkhao\newsdetail.html" />
+    <Content Include="layout_nhasach_thamkhao\newsgrid.html" />
+    <Content Include="layout_nhasach_thamkhao\newslist.html" />
+    <Content Include="layout_nhasach_thamkhao\productdetail.html" />
+    <Content Include="layout_nhasach_thamkhao\products.html" />
+    <Content Include="images\author\imag-01.jpg" />
+    <Content Include="images\author\imag-02.jpg" />
+    <Content Include="images\author\imag-03.jpg" />
+    <Content Include="images\author\imag-04.jpg" />
+    <Content Include="images\author\imag-05.jpg" />
+    <Content Include="images\author\imag-06.jpg" />
+    <Content Include="images\author\imag-07.jpg" />
+    <Content Include="images\author\imag-08.jpg" />
+    <Content Include="images\author\imag-09.jpg" />
+    <Content Include="images\author\imag-10.jpg" />
+    <Content Include="images\author\imag-11.jpg" />
+    <Content Include="images\author\imag-14.jpg" />
+    <Content Include="images\author\imag-15.jpg" />
+    <Content Include="images\author\imag-16.jpg" />
+    <Content Include="images\author\imag-17.jpg" />
+    <Content Include="images\author\imag-18.jpg" />
+    <Content Include="images\author\imag-19.jpg" />
+    <Content Include="images\author\imag-20.jpg" />
+    <Content Include="images\author\imag-21.jpg" />
+    <Content Include="images\author\imag-22.jpg" />
+    <Content Include="images\author\imag-23.jpg" />
+    <Content Include="images\author\imag-24.jpg" />
+    <Content Include="images\author\imag-25.jpg" />
+    <Content Include="images\author\imag-26.jpg" />
+    <Content Include="images\blog\img-01.jpg" />
+    <Content Include="images\blog\img-02.jpg" />
+    <Content Include="images\blog\img-03.jpg" />
+    <Content Include="images\blog\img-04.jpg" />
+    <Content Include="images\blog\img-05.jpg" />
+    <Content Include="images\blog\img-06.jpg" />
+    <Content Include="images\blog\img-07.jpg" />
+    <Content Include="images\blog\img-08.jpg" />
+    <Content Include="images\blog\img-09.jpg" />
+    <Content Include="images\blog\img-10.jpg" />
+    <Content Include="images\blog\img-11.jpg" />
+    <Content Include="images\blog\img-12.jpg" />
+    <Content Include="images\blog\img-13.jpg" />
+    <Content Include="images\blog\img-14.jpg" />
+    <Content Include="images\blog\img-15.jpg" />
+    <Content Include="images\books\bookpattren.png" />
+    <Content Include="images\comingsoon-bg.jpg" />
+    <Content Include="images\flogo.png" />
+    <Content Include="images\img-01.jpg" />
+    <Content Include="images\img-01.png" />
+    <Content Include="images\img-02.jpg" />
+    <Content Include="images\img-02.png" />
+    <Content Include="images\img-03.jpg" />
+    <Content Include="images\img-03.png" />
+    <Content Include="images\img-04.jpg" />
+    <Content Include="images\img-04.png" />
+    <Content Include="images\img-05.jpg" />
+    <Content Include="images\instagram\img-01.jpg" />
+    <Content Include="images\instagram\img-02.jpg" />
+    <Content Include="images\instagram\img-03.jpg" />
+    <Content Include="images\instagram\img-04.jpg" />
+    <Content Include="images\instagram\img-05.jpg" />
+    <Content Include="images\instagram\img-06.jpg" />
+    <Content Include="images\instagram\img-07.jpg" />
+    <Content Include="images\instagram\img-08.jpg" />
+    <Content Include="images\instagram\img-09.jpg" />
+    <Content Include="images\logo-02.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\owl.video.play.png" />
+    <Content Include="images\parallax\bgparallax-01.jpg" />
+    <Content Include="images\parallax\bgparallax-02.jpg" />
+    <Content Include="images\parallax\bgparallax-03.jpg" />
+    <Content Include="images\parallax\bgparallax-04.jpg" />
+    <Content Include="images\parallax\bgparallax-05.jpg" />
+    <Content Include="images\parallax\bgparallax-06.jpg" />
+    <Content Include="images\parallax\bgparallax-07.jpg" />
+    <Content Include="images\paymenticon.png" />
+    <Content Include="images\placeholder.jpg" />
+    <Content Include="images\placeholdervtwo.jpg" />
+    <Content Include="images\products\img-01.jpg" />
+    <Content Include="images\products\img-02.jpg" />
+    <Content Include="images\products\img-03.jpg" />
+    <Content Include="images\products\img-04.jpg" />
+    <Content Include="images\products\img-05.jpg" />
+    <Content Include="images\products\img-06.jpg" />
+    <Content Include="images\products\img-07.jpg" />
+    <Content Include="images\team\img-01.jpg" />
+    <Content Include="images\team\img-02.jpg" />
+    <Content Include="images\team\img-03.jpg" />
+    <Content Include="images\team\img-04.jpg" />
+    <Content Include="images\team\img-05.jpg" />
+    <Content Include="images\ui-icons_444444_256x240.html" />
+    <Content Include="images\ui-icons_555555_256x240.html" />
+    <Content Include="images\ui-icons_777620_256x240.html" />
+    <Content Include="images\ui-icons_777777_256x240.html" />
+    <Content Include="images\ui-icons_cc0000_256x240.html" />
+    <Content Include="images\ui-icons_ffffff_256x240.html" />
+    <Content Include="images\users\img-01.jpg" />
+    <Content Include="js\appear.js" />
+    <Content Include="js\countdown.js" />
+    <Content Include="js\countTo.js" />
+    <Content Include="js\gmap3.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.vide.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\parallax.js" />
+    <Content Include="js\vendor\bootstrap.min.js" />
+    <Content Include="js\vendor\jquery-library.js" />
+    <Content Include="js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <Content Include="Models\QLNHASACH.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLNHASACH.edmx</DependentUpon>
+      <LastGenOutput>QLNHASACH.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\QLNHASACH.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLNHASACH.edmx</DependentUpon>
+      <LastGenOutput>QLNHASACH.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\QLNHASACH.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLNHASACH.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\QLNHASACH.edmx.diagram">
+      <DependentUpon>QLNHASACH.edmx</DependentUpon>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="fonts\icomoonbd7d.eot" />
+    <Content Include="fonts\icomoonbd7d.ttf" />
+    <Content Include="fonts\icomoonbd7d.woff" />
+    <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.0.js" />
+    <Content Include="Scripts\jquery-3.7.0.min.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\SACHes\Create.cshtml" />
+    <Content Include="Views\SACHes\Delete.cshtml" />
+    <Content Include="Views\SACHes\Details.cshtml" />
+    <Content Include="Views\SACHes\Edit.cshtml" />
+    <Content Include="Views\SACHes\Index.cshtml" />
+    <Content Include="Views\THELOAIs\Create.cshtml" />
+    <Content Include="Views\THELOAIs\Delete.cshtml" />
+    <Content Include="Views\THELOAIs\Details.cshtml" />
+    <Content Include="Views\THELOAIs\Edit.cshtml" />
+    <Content Include="Views\THELOAIs\Index.cshtml" />
+    <Content Include="Views\PHIEUNHAPs\Create.cshtml" />
+    <Content Include="Views\PHIEUNHAPs\Delete.cshtml" />
+    <Content Include="Views\PHIEUNHAPs\Details.cshtml" />
+    <Content Include="Views\PHIEUNHAPs\Edit.cshtml" />
+    <Content Include="Views\PHIEUNHAPs\Index.cshtml" />
+    <Content Include="Views\NXBs\Create.cshtml" />
+    <Content Include="Views\NXBs\Delete.cshtml" />
+    <Content Include="Views\NXBs\Details.cshtml" />
+    <Content Include="Views\NXBs\Edit.cshtml" />
+    <Content Include="Views\NXBs\Index.cshtml" />
+    <Content Include="Views\HOADONs\Create.cshtml" />
+    <Content Include="Views\HOADONs\Delete.cshtml" />
+    <Content Include="Views\HOADONs\Details.cshtml" />
+    <Content Include="Views\HOADONs\Edit.cshtml" />
+    <Content Include="Views\HOADONs\Index.cshtml" />
+    <Content Include="Views\KHACHHANGs\Create.cshtml" />
+    <Content Include="Views\KHACHHANGs\Delete.cshtml" />
+    <Content Include="Views\KHACHHANGs\Details.cshtml" />
+    <Content Include="Views\KHACHHANGs\Edit.cshtml" />
+    <Content Include="Views\KHACHHANGs\Index.cshtml" />
+    <Content Include="Views\NHANVIENs\Create.cshtml" />
+    <Content Include="Views\NHANVIENs\Delete.cshtml" />
+    <Content Include="Views\NHANVIENs\Details.cshtml" />
+    <Content Include="Views\NHANVIENs\Edit.cshtml" />
+    <Content Include="Views\NHANVIENs\Index.cshtml" />
+    <Content Include="Views\PHIEUNHAPs\NhapChiTiet.cshtml" />
+    <Content Include="Views\HOADONs\GioHang.cshtml" />
+    <Content Include="Views\BaoCao\DoanhThuNhanVien.cshtml" />
+    <Content Include="Views\BaoCao\DoanhThuTheoNgay.cshtml" />
+    <Content Include="Views\BaoCao\index.cshtml" />
+    <Content Include="Views\BaoCao\SoHoaDon.cshtml" />
+    <Content Include="Views\BaoCao\SoHoaDonNhanVien.cshtml" />
+    <Content Include="Views\BaoCao\SoSachNhap.cshtml" />
+    <Content Include="Views\SACHes\CanhBaoNhapHang.cshtml" />
+    <Content Include="Views\THELOAIs\ChuyenVaXoa.cshtml" />
+    <Content Include="Views\KHACHHANGs\DoiDiem.cshtml" />
+    <Content Include="Views\KHACHHANGs\LichSuChiTiet.cshtml" />
+    <Content Include="Views\KHACHHANGs\TichDiem.cshtml" />
+    <Content Include="Views\KHACHHANGs\TimKiem.cshtml" />
+    <Content Include="Views\PHIEUNHAPs\BaoCao.cshtml" />
+    <Content Include="Views\Shared\_Layout1.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\_MenuPartial.cshtml" />
+    <Content Include="Views\Users\Login.cshtml" />
+    <Content Include="Views\Users\Register.cshtml" />
+    <Content Include="Views\BaoCao\_ViewStart.cshtml" />
+    <Content Include="Views\HOADONs\_ViewStart.cshtml" />
+    <Content Include="Views\Home\_ViewStart.cshtml" />
+    <Content Include="Views\KHACHHANGs\_ViewStart.cshtml" />
+    <Content Include="Views\NHANVIENs\_ViewStart.cshtml" />
+    <Content Include="Views\NXBs\_ViewStart.cshtml" />
+    <Content Include="Views\PHIEUNHAPs\_ViewStart.cshtml" />
+    <Content Include="Views\SACHes\_ViewStart.cshtml" />
+    <Content Include="Views\THELOAIs\_ViewStart.cshtml" />
+    <Content Include="Views\Users\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Sach.cshtml" />
+    <Content Include="Views\Home\SachTheoTheLoai.cshtml" />
+    <Content Include="Views\Home\TimKiem.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\GioHang\GioHang.cshtml" />
+    <Content Include="Views\GioHang\GioHangPartial.cshtml" />
+    <Content Include="Views\GioHang\DatHang.cshtml" />
+    <Content Include="Views\GioHang\XacNhanDonHang.cshtml" />
+    <Content Include="Views\Home\LichSuDonHang.cshtml" />
+    <Content Include="Views\Home\ChiTietDonHang.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\SachTheoTacGia.cshtml" />
+    <Content Include="Views\TACGIAs\Create.cshtml" />
+    <Content Include="Views\TACGIAs\Delete.cshtml" />
+    <Content Include="Views\TACGIAs\Details.cshtml" />
+    <Content Include="Views\TACGIAs\Edit.cshtml" />
+    <Content Include="Views\TACGIAs\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55573</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44334/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

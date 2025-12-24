@@ -1,0 +1,224 @@
+﻿@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<style>
+    /* =========================================
+       1. CSS CHO BANNER GIỐNG HÌNH MẪU
+       ========================================= */
+    .contact-banner {
+        background: #f9f9f9 url('/images/contact-bg.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 80px 0; /* Khoảng cách trên dưới rộng ra */
+        text-align: center;
+        position: relative;
+        border-bottom: 1px solid #eee;
+    }
+
+    .banner-title {
+        font-size: 42px;
+        font-weight: 800; /* Chữ đậm */
+        color: #333;
+        text-transform: uppercase;
+        margin: 0 0 15px 0;
+        letter-spacing: 1px;
+    }
+
+    /* Hộp màu xanh chứa Breadcrumb */
+    .green-breadcrumb-box {
+        background-color: #77b748; /* Màu xanh chủ đạo của web */
+        display: inline-block; /* Để hộp co lại vừa nội dung */
+        padding: 8px 25px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        position: relative;
+    }
+
+        .green-breadcrumb-box a {
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+            .green-breadcrumb-box a:hover {
+                color: #e0e0e0;
+                text-decoration: underline;
+            }
+
+        .green-breadcrumb-box i {
+            margin: 0 8px;
+            font-size: 12px;
+        }
+
+    /* =========================================
+       CSS CHO THÀNH VIÊN
+       ========================================= */
+    .member-card {
+        background: #fff;
+        border: 1px solid #e1e1e1;
+        border-radius: 8px;
+        padding: 30px 20px;
+        text-align: center;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+    }
+
+        .member-card:hover {
+            border-color: #77b748;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+
+    .member-icon {
+        font-size: 60px;
+        color: #ddd;
+        margin-bottom: 15px;
+        transition: 0.3s;
+    }
+
+    .member-card:hover .member-icon {
+        color: #77b748;
+    }
+
+    .member-name {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .member-role {
+        display: inline-block;
+        background: #f0f0f0;
+        color: #555;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .member-mssv {
+        color: #777;
+        font-family: monospace;
+        font-size: 14px;
+    }
+</style>
+
+<div class="tg-innerbanner tg-haslayout tg-parallax tg-bginnerbanner" data-z-index="-100" data-appear-top-offset="600" data-parallax="scroll" data-image-src="/images/parallax/bgparallax-07.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="tg-innerbannercontent">
+                    <h1>@ViewBag.Title</h1>
+                    <ol class="tg-breadcrumb">
+                        <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
+                        <li class="tg-active">Liên hệ</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main id="tg-main" class="tg-main tg-haslayout">
+    <div class="tg-sectionspace tg-haslayout">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="tg-sectionhead">
+                        <h2>Danh sách thành viên</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="member-card">
+                        <div class="member-icon"><i class="fa fa-user-circle-o"></i></div>
+                        <h3 class="member-name">Nguyễn Lê Quang Phú</h3>
+                        <span class="member-role" style="background: #e8f5e9; color: #2e7d32;">Nhóm Trưởng</span>
+                        <p class="member-mssv">MSSV: 2001230670</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="member-card">
+                        <div class="member-icon"><i class="fa fa-user-circle"></i></div>
+                        <h3 class="member-name">La Văn Nam</h3>
+                        <span class="member-role">Thành viên</span>
+                        <p class="member-mssv">MSSV: 2001230543</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="member-card">
+                        <div class="member-icon"><i class="fa fa-user-circle"></i></div>
+                        <h3 class="member-name">Châu Gia Hào</h3>
+                        <span class="member-role">Thành viên</span>
+                        <p class="member-mssv">MSSV: 2001215746</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-md-offset-2">
+                    <div class="member-card">
+                        <div class="member-icon"><i class="fa fa-user-circle"></i></div>
+                        <h3 class="member-name">Bạch Tiến Đạt</h3>
+                        <span class="member-role">Thành viên</span>
+                        <p class="member-mssv">MSSV: 2033230059</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="member-card">
+                        <div class="member-icon"><i class="fa fa-user-circle"></i></div>
+                        <h3 class="member-name">Nguyễn Đức Chính</h3>
+                        <span class="member-role">Thành viên</span>
+                        <p class="member-mssv">MSSV: 2001230086</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr style="margin: 40px 0; border-top: 1px dashed #ccc;" />
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="tg-sectionhead" style="text-align: left; margin-bottom: 20px;">
+                        <h2><span>Kết nối</span>Thông tin liên hệ</h2>
+                    </div>
+                    <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 2;">
+                        <li><i class="fa fa-map-marker" style="color:#77b748; width: 25px;"></i> 227 Nguyễn Văn Cừ, Q.5, TP.HCM</li>
+                        <li><i class="fa fa-phone" style="color:#77b748; width: 25px;"></i> 0123 456 789</li>
+                        <li><i class="fa fa-envelope" style="color:#77b748; width: 25px;"></i> nhom5@hcmus.edu.vn</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="tg-sectionhead" style="text-align: left; margin-bottom: 20px;">
+                        <h2><span>Gửi phản hồi</span>Chúng tôi lắng nghe bạn</h2>
+                    </div>
+                    <form class="form-horizontal">
+                        <div class="row">
+                            <div class="col-md-6 form-group" style="margin-bottom: 15px;">
+                                <input type="text" class="form-control" placeholder="Họ tên *" style="height: 45px;">
+                            </div>
+                            <div class="col-md-6 form-group" style="margin-bottom: 15px;">
+                                <input type="email" class="form-control" placeholder="Email *" style="height: 45px;">
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <textarea class="form-control" rows="5" placeholder="Nội dung tin nhắn..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-success btn-lg" style="background-color: #77b748; border: none; width: 100%;">
+                            <i class="fa fa-paper-plane"></i> Gửi Tin Nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>

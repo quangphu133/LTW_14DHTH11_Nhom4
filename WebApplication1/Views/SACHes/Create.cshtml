@@ -1,0 +1,114 @@
+﻿@model WebApplication1.Models.SACH
+
+@{
+    ViewBag.Title = "Thêm Sách Mới";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Create", "SACHes", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal card p-4 shadow-sm mt-3">
+        <h4 class="text-primary">Thông tin sách</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="mb-3 row">
+            @Html.LabelFor(model => model.TenSach, "Tên Sách", htmlAttributes: new { @class = "control-label col-md-2 fw-bold" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TenSach, new { htmlAttributes = new { @class = "form-control", required = "required" } })
+                @Html.ValidationMessageFor(model => model.TenSach, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @* --- CHỈ CÒN ẢNH BÌA --- *@
+        <div class="mb-3 row">
+            <label class="control-label col-md-2 fw-bold">Ảnh Bìa</label>
+            <div class="col-md-10">
+                <input type="file" name="uploadAnhBia" class="form-control" accept="image/*" required />
+                <small class="text-muted">Vui lòng chọn ảnh bìa cho sách</small>
+            </div>
+        </div>
+        @* ----------------------- *@
+
+        <div class="mb-3 row">
+            @Html.LabelFor(model => model.MaTL, "Thể Loại", htmlAttributes: new { @class = "control-label col-md-2 fw-bold" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaTL", null, htmlAttributes: new { @class = "form-control form-select" })
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            @Html.LabelFor(model => model.MaTG, "Tác Giả", htmlAttributes: new { @class = "control-label col-md-2 fw-bold" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaTG", null, htmlAttributes: new { @class = "form-control form-select" })
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            @Html.LabelFor(model => model.MaNXB, "Nhà Xuất Bản", htmlAttributes: new { @class = "control-label col-md-2 fw-bold" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaNXB", null, htmlAttributes: new { @class = "form-control form-select" })
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            @Html.LabelFor(model => model.NamXB, "Năm Xuất Bản", htmlAttributes: new { @class = "control-label col-md-2 fw-bold" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NamXB, new { htmlAttributes = new { @class = "form-control", type = "number", Value = "2025" } })
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            @Html.LabelFor(model => model.GiaNhap, "Giá Nhập (VND)", htmlAttributes: new { @class = "control-label col-md-2 fw-bold" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GiaNhap, new { htmlAttributes = new { @class = "form-control", type = "number", min = "0", id = "GiaNhap" } })
+                @Html.ValidationMessageFor(model => model.GiaNhap, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            @Html.LabelFor(model => model.GiaBan, "Giá Bán (VND)", htmlAttributes: new { @class = "control-label col-md-2 fw-bold" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.GiaBan, new { htmlAttributes = new { @class = "form-control", type = "number", min = "0", id = "GiaBan" } })
+                @Html.ValidationMessageFor(model => model.GiaBan, "", new { @class = "text-danger" })
+                <span id="price-error" class="text-danger" style="display:none;">Giá bán phải lớn hơn giá nhập!</span>
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            @Html.LabelFor(model => model.MoTa, "Mô Tả", htmlAttributes: new { @class = "control-label col-md-2 fw-bold" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.MoTa, new { @class = "form-control", rows = "4" })
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-primary">Lưu Sách Mới</button>
+                @Html.ActionLink("Hủy bỏ", "Index", null, new { @class = "btn btn-secondary" })
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        $(document).ready(function () {
+            // Kiểm tra Giá Bán > Giá Nhập
+            $('#GiaBan, #GiaNhap').on('change keyup', function () {
+                var giaNhap = parseFloat($('#GiaNhap').val()) || 0;
+                var giaBan = parseFloat($('#GiaBan').val()) || 0;
+
+                if (giaBan > 0 && giaBan <= giaNhap) {
+                    $('#price-error').show();
+                } else {
+                    $('#price-error').hide();
+                }
+            });
+        });
+    </script>
+}

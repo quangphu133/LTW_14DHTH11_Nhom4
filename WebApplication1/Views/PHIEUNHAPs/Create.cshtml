@@ -1,0 +1,44 @@
+﻿@model WebApplication1.Models.PHIEUNHAP
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+        <div class="card shadow border-0">
+            <div class="card-header bg-dark text-white text-center">
+                <h4>BƯỚC 1: CHỌN NHÀ CUNG CẤP</h4>
+            </div>
+            <div class="card-body p-4">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">@ViewBag.Error</div>
+                    }
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">Nhập sách từ nguồn nào?</label>
+                        @Html.DropDownList("MaNXB", null, htmlAttributes: new { @class = "form-select form-select-lg" })
+                        <div class="form-text">Hệ thống sẽ tạo một phiếu nhập trống cho NXB này.</div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            TIẾP TỤC <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <a href="@Url.Action("Index")" class="btn btn-outline-secondary">Hủy bỏ</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

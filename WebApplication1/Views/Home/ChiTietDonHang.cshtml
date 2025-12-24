@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WebApplication1.Models.CHITIETDONHANG>
+@{
+    ViewBag.Title = "Chi tiết đơn hàng";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+    var donHang = ViewBag.DonHang as WebApplication1.Models.DONDATHANG;
+    decimal tongTien = 0;
+}
+
+<div class="container" style="margin-top: 40px; margin-bottom: 40px;">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3 style="border-bottom: 2px solid #77b748; padding-bottom: 10px; margin-bottom: 20px;">
+                Chi tiết đơn hàng #@donHang.MaDonHang
+                <span style="font-size: 14px; float: right; margin-top: 10px;">Ngày đặt: @String.Format("{0:dd/MM/yyyy}", donHang.NgayDat)</span>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Hình ảnh</th>
+                        <th class="text-center">Số lượng</th>
+                        <th class="text-right">Đơn giá</th>
+                        <th class="text-right">Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        var thanhTien = item.SoLuong * item.DonGia;
+                        tongTien += (decimal)thanhTien;
+                        <tr>
+                            <td style="vertical-align: middle;">
+                                <strong>@item.SACH.TenSach</strong>
+                            </td>
+                            <td>
+                                <img src="~/images/books/img-01.jpg" width="50" style="border: 1px solid #ddd;" />
+                            </td>
+                            <td class="text-center" style="vertical-align: middle;">@item.SoLuong</td>
+                            <td class="text-right" style="vertical-align: middle;">@String.Format("{0:0,0}", item.DonGia) đ</td>
+                            <td class="text-right" style="vertical-align: middle; color: #d9534f; font-weight: bold;">
+                                @String.Format("{0:0,0}", thanhTien) đ
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="text-right" style="font-size: 18px; font-weight: bold;">Tổng giá trị đơn hàng:</td>
+                        <td class="text-right" style="font-size: 20px; color: #d9534f; font-weight: bold;">
+                            @String.Format("{0:0,0}", tongTien) VNĐ
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <div class="text-left">
+        <a href="@Url.Action("LichSuDonHang", "Home")" class="btn btn-default">
+            <i class="fa fa-arrow-left"></i> Quay lại lịch sử
+        </a>
+    </div>
+</div>

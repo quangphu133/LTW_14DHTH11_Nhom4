@@ -1,0 +1,38 @@
+﻿@model WebApplication1.Models.THELOAI
+
+@{
+    ViewBag.Title = "Xóa Thể Loại";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mt-3">Xóa Thể Loại</h2>
+
+<div class="alert alert-warning">
+    <h4 class="text-danger">Bạn có chắc muốn xóa thể loại này không?</h4>
+    <p>Lưu ý: Nếu thể loại này đang có sách, hệ thống sẽ chặn xóa để bảo vệ dữ liệu.</p>
+</div>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @Html.ValidationSummary(false, "", new { @class = "text-danger fw-bold" })
+    </div>
+}
+
+<div class="card p-3 shadow-sm">
+    <dl class="row">
+        <dt class="col-sm-2">Tên Thể Loại:</dt>
+        <dd class="col-sm-10 fw-bold">
+            @Html.DisplayFor(model => model.TenTL)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="mt-3">
+            <button type="submit" class="btn btn-danger">Xác nhận Xóa</button>
+            @Html.ActionLink("Hủy bỏ", "Index", null, new { @class = "btn btn-secondary" })
+        </div>
+    }
+</div>

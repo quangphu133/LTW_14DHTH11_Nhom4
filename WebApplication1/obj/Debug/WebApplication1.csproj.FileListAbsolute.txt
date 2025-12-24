@@ -1,0 +1,996 @@
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll.config
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\WebApplication1.pdb
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe.config
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.rsp
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe.config
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.rsp
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Console.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Http.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe.config
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.rsp
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\WebGrease.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\EntityFramework.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\EntityFramework.xml
+D:\HQTCSDL\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll.config
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.pdb
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe.config
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.rsp
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe.config
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.rsp
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Console.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Http.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe.config
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.rsp
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebGrease.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.dll
+D:\HQTCSDL\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.pdb
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.rsp
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.rsp
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Console.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Http.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.rsp
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebGrease.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\HQT_Nhóm 3 (1)\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.pdb
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebGrease.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\artis\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.pdb
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\WebGrease.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\HP\Downloads\HQT_Nhóm 3\HQT_Nhóm 3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\WebApplication1.pdb
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\WebGrease.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\quang\Downloads\Nhom3\DoAn_Nhom3\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\WebApplication1.dll.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\WebApplication1.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\WebApplication1.pdb
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\csc.exe
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\csc.exe.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\csc.rsp
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\csi.exe
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\csi.exe.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\csi.rsp
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Console.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Net.Http.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\vbc.exe
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\vbc.exe.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\vbc.rsp
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\Antlr3.Runtime.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\EntityFramework.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\Newtonsoft.Json.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.Helpers.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.Mvc.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.Optimization.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.Razor.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.WebPages.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\WebGrease.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\EntityFramework.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.Helpers.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.Mvc.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.Optimization.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.Razor.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.WebPages.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\Newtonsoft.Json.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\obj\Debug\WebApplication1.dll
+D:\nguyen minh hien\HK6\HQT_Cơ Sở Dữ Liệu\Tuan12\Nhom3\Nhom3\Nhom3\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.dll.config
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.pdb
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.exe
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.exe.config
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.rsp
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.exe
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.exe.config
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.rsp
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Console.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Net.Http.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.exe
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.exe.config
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.rsp
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Antlr3.Runtime.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Newtonsoft.Json.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Helpers.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Mvc.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Optimization.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Razor.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebGrease.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Helpers.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Mvc.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Optimization.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Razor.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Newtonsoft.Json.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.exe
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.exe
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebGrease.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Admin\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.pdb
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.exe
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.exe
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebGrease.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\quang\Downloads\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.dll.config
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebApplication1.pdb
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.exe
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.exe.config
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csc.rsp
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.exe
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.exe.config
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\csi.rsp
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Console.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Net.Http.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.exe
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.exe.config
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\vbc.rsp
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Antlr3.Runtime.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Newtonsoft.Json.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Helpers.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Mvc.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Optimization.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Razor.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\WebGrease.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Helpers.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Mvc.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Optimization.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.Razor.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Newtonsoft.Json.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.dll
+D:\CNPM\DoAn_Nhom5\DoAn_Nhom5\Nhom5_code\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\WebApplication1.dll.config
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\WebApplication1.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\WebApplication1.pdb
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\csc.exe
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\csc.exe.config
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\csc.rsp
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\csi.exe
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\csi.exe.config
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\csi.rsp
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Console.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Net.Http.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\vbc.exe
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\vbc.exe.config
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\vbc.rsp
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\Antlr3.Runtime.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\EntityFramework.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\Newtonsoft.Json.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.Helpers.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.Mvc.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.Optimization.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.Razor.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.WebPages.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\WebGrease.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\EntityFramework.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.Helpers.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.Mvc.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.Optimization.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.Razor.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.WebPages.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\Newtonsoft.Json.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\obj\Debug\WebApplication1.dll
+D:\CNPM\DoAn_Nhom5\Nhom5_CT3_code\WebApplication1\obj\Debug\WebApplication1.pdb

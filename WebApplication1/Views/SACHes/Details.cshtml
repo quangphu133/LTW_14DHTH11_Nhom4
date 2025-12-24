@@ -1,0 +1,53 @@
+﻿@model WebApplication1.Models.SACH
+
+@{
+    ViewBag.Title = "Chi tiết sách";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card border-info shadow-sm">
+        <div class="card-header bg-info text-white">
+            <h4 class="mb-0">Chi tiết: @Model.TenSach</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8">
+                    <dl class="row">
+                        <dt class="col-sm-3">Tác giả:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.TACGIA.TenTG)</dd>
+
+                        <dt class="col-sm-3">Thể loại:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.THELOAI.TenTL)</dd>
+
+                        <dt class="col-sm-3">Nhà xuất bản:</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.NXB.TenNXB) - Năm @Model.NamXB</dd>
+
+                        <dt class="col-sm-3">Mô tả:</dt>
+                        <dd class="col-sm-9"><i>@(string.IsNullOrEmpty(Model.MoTa) ? "Chưa có mô tả" : Model.MoTa)</i></dd>
+                    </dl>
+                </div>
+                <div class="col-md-4 bg-light p-3 rounded border">
+                    <h5 class="text-center text-success fw-bold">Thông tin Kho & Giá</h5>
+                    <hr />
+                    <p class="d-flex justify-content-between">
+                        <strong>Giá Nhập:</strong>
+                        <span>@String.Format("{0:N0}", Model.GiaNhap) đ</span>
+                    </p>
+                    <p class="d-flex justify-content-between">
+                        <strong>Giá Bán:</strong>
+                        <span class="text-danger fw-bold" style="font-size:1.2em">@String.Format("{0:N0}", Model.GiaBan) đ</span>
+                    </p>
+                    <p class="d-flex justify-content-between align-items-center">
+                        <strong>Tồn kho:</strong>
+                        <span class="badge bg-primary fs-6">@Model.SoLuongTon cuốn</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-end">
+            @Html.ActionLink("Sửa", "Edit", new { id = Model.MaSach }, new { @class = "btn btn-warning" })
+            @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary ms-2" })
+        </div>
+    </div>
+</div>

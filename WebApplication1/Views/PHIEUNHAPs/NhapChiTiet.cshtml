@@ -1,0 +1,133 @@
+﻿@model WebApplication1.Models.PHIEUNHAP
+@{
+    ViewBag.Title = "Chi tiết nhập hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var listChiTiet = ViewBag.ListChiTiet as List<WebApplication1.Models.CHITIETPHIEUNHAP>;
+}
+
+<div class="alert alert-secondary d-flex justify-content-between align-items-center">
+    <div>
+        <h4 class="alert-heading mb-0"><i class="fas fa-file-invoice"></i> PHIẾU NHẬP KHO: #@Model.MaPN</h4>
+        <small>Ngày tạo: @Model.NgayNhap.Value.ToString("dd/MM/yyyy HH:mm") | Người lập: <strong>@Model.NHANVIEN.HoTen</strong></small>
+    </div>
+    <div class="text-end">
+        <span class="badge bg-warning text-dark fs-6">NXB: @Model.NXB.TenNXB</span>
+        <h3 class="text-danger fw-bold m-0 mt-1">Tổng: @string.Format("{0:N0}", Model.TongTien) đ</h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card shadow h-100">
+            <div class="card-header bg-primary text-white">
+                <i class="fas fa-plus"></i> Thêm sách vào phiếu
+            </div>
+            <div class="card-body">
+                @if (Model.TrangThai != "Đã hủy")
+                {
+                    if (ViewBag.CanhBaoSach != null)
+                    {
+                        <div class="alert alert-warning">
+                            @ViewBag.CanhBaoSach <br />
+                            <a href="@Url.Action("Create", "SACHes")" class="fw-bold">Thêm sách mới cho NXB này</a>
+                        </div>
+                    }
+
+                    <form action="@Url.Action("ThemSachVaoPhieu", "PHIEUNHAPs")" method="post">
+                        <input type="hidden" name="MaPN" value="@Model.MaPN" />
+
+                        <div class="mb-3">
+                            <label class="fw-bold">Chọn sách (@Model.NXB.TenNXB):</label>
+                            @Html.DropDownList("MaSach", null, new { @class = "form-select" })
+                            <small class="text-muted fst-italic">Hệ thống chỉ hiển thị sách thuộc @Model.NXB.TenNXB</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="fw-bold">Số lượng nhập:</label>
+                            <input type="number" name="SoLuong" class="form-control" min="1" value="10" required />
+                        </div>
+
+                        <div class="alert alert-info py-2" style="font-size: 0.9rem">
+                            <i class="fas fa-info-circle"></i> Đơn giá nhập sẽ được lấy tự động theo giá bìa của sách.
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-download"></i> NHẬP KHO NGAY
+                            </button>
+                        </div>
+                    </form>
+                }
+                else
+                {
+                    <div class="alert alert-danger text-center">
+                        Phiếu này đã bị hủy. Không thể nhập thêm.
+                    </div>
+                }
+            </div>
+            <div class="card-footer">
+                <a href="@Url.Action("Index")" class="btn btn-outline-secondary w-100">
+                    <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card shadow h-100">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                <span><i class="fas fa-list"></i> Danh sách chi tiết</span>
+
+                @if (Model.TrangThai != "Đã hủy")
+                {
+                    <a href="@Url.Action("HuyPhieu", new { id = Model.MaPN })"
+                       class="btn btn-danger btn-sm"
+                       onclick="return confirm('CẢNH BÁO QUAN TRỌNG:\n\nHủy phiếu sẽ trừ ngược lại số lượng tồn kho của các sách trong phiếu này.\nBạn có chắc chắn muốn hủy không?')">
+                        <i class="fas fa-times-circle"></i> Hủy phiếu & Hoàn kho
+                    </a>
+                }
+            </div>
+            <div class="card-body p-0">
+                @if (TempData["ThongBao"] != null)
+                {
+                    <div class="alert alert-success m-3">@TempData["ThongBao"]</div>
+                }
+                @if (TempData["Loi"] != null)
+                {
+                    <div class="alert alert-danger m-3">@TempData["Loi"]</div>
+                }
+
+                <table class="table table-striped table-hover mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Tên Sách</th>
+                            <th class="text-center">SL</th>
+                            <th class="text-end">Đơn giá (Auto)</th>
+                            <th class="text-end">Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (listChiTiet != null && listChiTiet.Count > 0)
+                        {
+                            foreach (var item in listChiTiet)
+                            {
+                                <tr>
+                                    <td>@item.SACH.TenSach</td>
+                                    <td class="text-center"><span class="badge bg-info text-dark">@item.SoLuong</span></td>
+                                    <td class="text-end">@string.Format("{0:N0}", item.DonGiaNhap)</td>
+                                    <td class="text-end fw-bold text-success">@string.Format("{0:N0}", item.SoLuong * item.DonGiaNhap)</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="4" class="text-center text-muted py-4">Chưa có sách nào được nhập trong phiếu này.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

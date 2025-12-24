@@ -1,0 +1,50 @@
+﻿@model IEnumerable<WebApplication1.Controllers.LichSuChiTietViewModel>
+@{
+    ViewBag.Title = "Chi tiết lịch sử mua";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var kh = ViewBag.KhachHang as WebApplication1.Models.KHACHHANG;
+}
+
+<div>
+    <h4>Lịch sử mua hàng chi tiết: <span class="text-primary">@(kh != null ? kh.HoTen : "")</span></h4>
+    <hr />
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr class="info">
+                <th>Mã HĐ</th>
+                <th>Ngày Lập</th>
+                <th>Tên Sách</th>
+                <th>Số Lượng</th>
+                <th>Đơn Giá</th>
+                <th>Thành Tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.MaHD</td>
+                        <td>@item.NgayLap.ToString("dd/MM/yyyy")</td>
+                        <td>@item.TenSach</td>
+                        <td>@item.SoLuong</td>
+                        <td>@string.Format("{0:N0}", item.DonGiaBan)</td>
+                        <td style="font-weight:bold; color:red">@string.Format("{0:N0}", item.ThanhTien)</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center">Khách hàng chưa mua cuốn sách nào.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="form-group">
+        @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-default" })
+    </div>
+</div>

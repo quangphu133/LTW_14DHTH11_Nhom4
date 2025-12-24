@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WebApplication1.Models.TACGIA>
+
+@{
+    ViewBag.Title = "Danh sách Tác giả";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid pt-4">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between bg-primary text-white">
+            <h5 class="m-0 font-weight-bold"><i class="fas fa-user-pen me-2"></i>Danh Sách Tác Giả</h5>
+
+            <a href="@Url.Action("Create")" class="btn btn-light btn-sm text-primary fw-bold">
+                <i class="fas fa-plus"></i> Thêm mới
+            </a>
+        </div>
+
+        <div class="card-body">
+            @using (Html.BeginForm("Index", "TACGIAs", FormMethod.Get, new { @class = "row g-3 mb-4 justify-content-end" }))
+            {
+                <div class="col-auto">
+                    <div class="input-group">
+                        <input type="text" name="searchString" class="form-control" placeholder="Tìm tên tác giả..." value="@Request.QueryString["searchString"]">
+                        <button class="btn btn-outline-secondary" type="submit">
+                            <i class="fas fa-search"></i> Tìm
+                        </button>
+                    </div>
+                </div>
+            }
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover" width="100%" cellspacing="0">
+                    <thead class="table-light">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.TenTG)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.QueQuan)
+                            </th>
+                            <th class="text-center" style="width: 200px;">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Count() == 0)
+                        {
+                            <tr>
+                                <td colspan="3" class="text-center text-muted fst-italic py-3">
+                                    Không tìm thấy dữ liệu tác giả nào.
+                                </td>
+                            </tr>
+                        }
+                        else
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="align-middle fw-bold text-primary">
+                                        @Html.DisplayFor(modelItem => item.TenTG)
+                                    </td>
+                                    <td class="align-middle">
+                                        @Html.DisplayFor(modelItem => item.QueQuan)
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <a href="@Url.Action("Edit", new { id = item.MaTG })" class="btn btn-warning btn-sm" title="Sửa">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a href="@Url.Action("Details", new { id = item.MaTG })" class="btn btn-info btn-sm text-white" title="Chi tiết">
+                                            <i class="fas fa-info-circle"></i>
+                                        </a>
+                                        <a href="@Url.Action("Delete", new { id = item.MaTG })" class="btn btn-danger btn-sm" title="Xóa">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
